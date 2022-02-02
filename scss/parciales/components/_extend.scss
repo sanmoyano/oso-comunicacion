@@ -1,0 +1,24 @@
+@import "../utilities/variables"; //variables
+
+%titulo-uno-oso {
+    font-family: $titulo-uno-oso;
+    font-size: 700;
+}
+
+%titulo-dos-oso {
+    font-family: $tiutlo-dos-oso;
+    font-size: 500;
+    color: $amarillo-oso;
+}
+
+%headline-oso {
+    font-family: $headline-oso;
+    font-size: 400;
+    color: $negro-oso;
+}
+
+%body-oso {
+    font-family: $body-oso;
+    font-size: 400;
+    color: $gris-oscuro-oso;
+}
