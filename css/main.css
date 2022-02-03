@@ -1,24 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500o&display=swap");
-.bg-light {
-  background-color: white !important; }
-
-.navbar {
-  height: 80px;
-  display: flex;
+* {
+  margin: 0px;
   padding: 0px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  filter: drop-shadow(0px 0px 3px #7F7F7F); }
-  .navbar .container-fluid {
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px; }
-    .navbar .container-fluid .navbar-brand {
-      width: 100px;
-      margin-left: 24px; }
-    .navbar .container-fluid .navbar-collapse {
-      background-color: white; }
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem); }
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between; }
+  .primary-header .logo {
+    margin: 2.4rem;
+    width: 20vw; }
+  .primary-header .primary-nav {
+    list-style: none;
+    position: fixed;
+    inset: 0 0 0 30%;
+    background-color: white;
+    flex-direction: column;
+    padding: 8rem 2rem; }
+    .primary-header .primary-nav a {
+      text-decoration: none;
+      margin-inline-end: 2.4rem; }
+    .primary-header .primary-nav span {
+      margin-inline-end: 0.75rem; }
+    @media screen and (min-width: 1024px) {
+      .primary-header .primary-nav {
+        flex-direction: row;
+        padding: unset;
+        inset: unset;
+        position: unset;
+        background-color: unset; } }
+
+.primary-header .primary-nav a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #8d43f0; }
 
 * {
   margin: 0px;

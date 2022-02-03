@@ -2,31 +2,34 @@
 
 %titulo-uno-oso {
     font-family: $titulo-uno-oso;
-    font-size: 4.5rem; 
+    font-size: 3.4rem; 
     font-weight: 700;
 }
 
 %titulo-dos-oso {
     font-family: $tiutlo-dos-oso;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     font-weight: 500;
     color: $amarillo-oso;
 }
 
 %headline-oso {
     font-family: $headline-oso;
-    font-size: 2.1rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: $negro-oso;
 }
 
-%body-oso {
-    font-family: $body-oso;
-    font-size: 2.1rem;
-    font-weight: 400;
-    color: $gris-oscuro-oso;
+%navbar-oso {
+    font-family: $navbar-oso;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $lila-oso;
 }
 
-%display {
-    display: flex;
+%body-oso {
+    font-family: $body-oso;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $gris-oscuro-oso;
 }

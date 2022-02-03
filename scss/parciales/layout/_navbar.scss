@@ -1,24 +1,41 @@
-.bg-light {
-    background-color: $blanco-oso !important; 
+@import "../utilities/variables"; //variables
+@import "../base/reset"; //reset
 
-}
-.navbar {
-    height: 80px;
+// primary-header
+.flex {
     display: flex;
-    padding: 0px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    filter: drop-shadow(0px 0px 3px $gris-oscuro-oso);
-    .container-fluid {
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px;
-        .navbar-brand {
-            width: 100px;
-            margin-left: 24px;
+    gap: var(--gap, 1rem)
+}
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        margin: 2.4rem;
+        width: 20vw;
+    }
+    //elementos del nav -- mobil first
+    .primary-nav {
+        list-style: none;
+        position: fixed;
+        inset: 0 0 0 30%;
+        background-color: white;
+        flex-direction: column;
+        padding: 8rem 2rem;
+        a {
+            text-decoration: none;
+            margin-inline-end: 2.4rem;
+            @extend %navbar-oso
         }
-        .navbar-collapse {
-            background-color: $blanco-oso;
+        span {
+            margin-inline-end: 0.75rem;
+        }
+        //desktop media query
+        @include desktop {
+            flex-direction: row;
+            padding: unset;
+            inset: unset;
+            position: unset;
+            background-color: unset;
         }
     }
 }
