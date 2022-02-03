@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500o&display=swap");
+.bg-light {
+  background-color: white !important; }
+
+.navbar {
+  height: 80px;
+  display: flex;
+  padding: 0px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  filter: drop-shadow(0px 0px 3px #7F7F7F); }
+  .navbar .container-fluid {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px; }
+    .navbar .container-fluid .navbar-brand {
+      width: 100px;
+      margin-left: 24px; }
+    .navbar .container-fluid .navbar-collapse {
+      background-color: white; }
+
 * {
   margin: 0px;
   padding: 0px;
