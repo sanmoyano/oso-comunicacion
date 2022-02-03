@@ -9,33 +9,111 @@
 .primary-header {
     align-items: center;
     justify-content: space-between;
-    .logo {
+    
+    //logo completo - desktop tablet
+    .logo-container {
+        width: 150px;
         margin: 2.4rem;
-        width: 20vw;
+        .logo {
+            width: 100%
+        }
+        @include mobilsm {
+            width: 120px;
+        }
+        
+        @include mobilxsm {
+            display: none;
+        }
     }
+
+    //logo mobilxs
+    .logo-container-mobil {
+        display: none;
+        width: 75px;
+        margin: 2rem;
+        flex-wrap: nowrap;
+        .logo-mobil {
+            width: 100%;
+        }
+        @include mobilxsm {
+            display: flex;
+        }
+    }
+
     //elementos del nav -- mobil first
     .primary-nav {
         list-style: none;
         position: fixed;
-        inset: 0 0 0 30%;
-        background-color: white;
+        inset: 0 0 40% 35%;
+        background-color: $blanco-oso;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        filter: drop-shadow(2px 2px 5px $gris-oscuro-oso);
         flex-direction: column;
-        padding: 8rem 2rem;
-        a {
-            text-decoration: none;
-            margin-inline-end: 2.4rem;
-            @extend %navbar-oso
+        padding: 2.4rem 2rem;
+        padding-right: 1rem;
+        li {
+            margin-bottom: 1.5rem;
+            margin-right: 1.4rem;
+            border-bottom: solid $gris-claro-oso 1px;
+            padding: 1rem;
+            @include desktop {
+                margin-bottom: unset;
+                margin-right: unset;;
+                border-bottom:unset;
+                padding: unset;
+            }
+            
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                margin-inline-end: 2rem;
+                @extend %navbar-oso;
+            }
+            span {
+                margin-inline-end: 1rem;
+                .iconos-navbar {
+                    width: 26px;
+                    @include desktop {
+                        display: none;
+                    }
+                }
+            }
         }
-        span {
-            margin-inline-end: 0.75rem;
-        }
+    
         //desktop media query
         @include desktop {
             flex-direction: row;
+            align-items: center;
             padding: unset;
             inset: unset;
             position: unset;
             background-color: unset;
+            filter: unset;
         }
+
+        //menu y logo del desplegable
+        .nav-titles {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8rem;
+            h1 {
+                @extend %menu-oso; 
+                @include desktop {
+                    display: none;
+                }
+            }
+            .logo-nav {
+                width: 60px;
+                margin-right: 1.4rem;
+                @include desktop {
+                    display: none;
+                }
+            }
+        }
+
     }
 }
+

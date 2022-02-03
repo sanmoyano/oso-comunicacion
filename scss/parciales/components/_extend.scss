@@ -16,7 +16,7 @@
 %headline-oso {
     font-family: $headline-oso;
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 700;
     color: $negro-oso;
 }
 
@@ -25,6 +25,13 @@
     font-size: 1.6rem;
     font-weight: 700;
     color: $lila-oso;
+}
+
+%menu-oso {
+    font-family: $headline-oso;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $lila-oso-pastel;
 }
 
 %body-oso {

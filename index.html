@@ -20,15 +20,26 @@
 <body>
     <!-- COMIENZO HEADER -->
     <header class="primary-header flex">
-        <div>
-            <img src="./icons/logo_oso_completo.svg" alt="oso comunicación logo" class="logo">
+        <div class="logo-container">
+            <a href="./index.html">
+                <img src="./icons/logo_oso_completo.svg" alt="oso comunicación logo" class="logo">
+            </a>
         </div>
-        <nav>
+        <div class="logo-container-mobil">
+            <a href="./index.html">
+                <img src="./icons/isologo_oso_v1.svg" alt="oso comunicación logo" class="logo-mobil">
+            </a>
+        </div>
+        <nav class="nav">
             <ul id="primary-nav" data-visible="false" class="primary-nav underline-indicators flex">
-                <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./pages/01quienes.html"><span aria-hidden="true">00</span>¿Quienes somos?</a>
-                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./pages/02servicios.html"><span aria-hidden="true">01</span>Servicios</a>
-                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./pages/03consultoria.html"><span aria-hidden="true">02</span>Consultorías</a>
-                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./pages/04.contacto.html"><span aria-hidden="true">03</span>Contacto</a>
+                <div class="nav-titles">
+                    <h1>Menu</h1>
+                    <img src="./icons/isologo_oso_v1.svg" alt="oso comunicación logo" class="logo-nav">
+                </div>
+                <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./pages/01quienes.html"><span aria-hidden="true"><img class="iconos-navbar" src="./icons/altavoz_oso_amarillo.svg" alt="quienes somos?"></span>¿Quienes somos?</a>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./pages/02servicios.html"><span aria-hidden="true"><img class="iconos-navbar" src="./icons/pantallas_oso_amarillo.svg" alt="quienes somos?"></span>Servicios</a>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./pages/03consultoria.html"><span aria-hidden="true"><img class="iconos-navbar" src="./icons/lupa_oso_amarillo.svg" alt="quienes somos?"></span>Consultorías</a>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./pages/04.contacto.html"><span aria-hidden="true"><img class="iconos-navbar" src="./icons/chat_oso_amarillo.svg" alt="quienes somos?"></span>Contacto</a>
             </ul>
         </nav>
     </header>
