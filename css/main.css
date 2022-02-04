@@ -39,12 +39,10 @@ html {
   .primary-header .primary-nav {
     list-style: none;
     position: fixed;
-    inset: 0 0 40% 35%;
+    inset: 0 0 30% 35%;
     z-index: 1000;
-    background-color: white;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
-    filter: drop-shadow(2px 2px 5px #7F7F7F);
     flex-direction: column;
     padding: 12rem 2rem;
     padding-right: 1rem;
@@ -129,6 +127,10 @@ html {
   font-size: 1.6rem;
   font-weight: 700;
   color: #c9aecf; }
+
+.primary-header .primary-nav {
+  background-color: white;
+  filter: drop-shadow(2px 2px 5px #7F7F7F); }
 
 * {
   margin: 0px;

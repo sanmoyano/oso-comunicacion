@@ -43,12 +43,11 @@
     .primary-nav {
         list-style: none;
         position: fixed;
-        inset: 0 0 40% 35%;
+        inset: 0 0 30% 35%;
         z-index: 1000;
-        background-color: $blanco-oso;
+        @extend %sombra-menu-oso;
         border-top-left-radius: 16px;
         border-bottom-left-radius: 16px;
-        filter: drop-shadow(2px 2px 5px $gris-oscuro-oso);
         flex-direction: column;
         padding: 12rem 2rem;
         padding-right: 1rem;
@@ -144,6 +143,7 @@
         border: 0;
     }
 }
+
 
 
 

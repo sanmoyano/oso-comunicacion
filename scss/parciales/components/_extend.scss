@@ -40,3 +40,8 @@
     font-weight: 400;
     color: $gris-oscuro-oso;
 }
+
+%sombra-menu-oso {
+    background-color: $blanco-oso;
+    filter: drop-shadow(2px 2px 5px $gris-oscuro-oso);
+}
