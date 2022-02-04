@@ -28,7 +28,7 @@ html {
         display: none; } }
   .primary-header .logo-container-mobil {
     display: none;
-    width: 75px;
+    width: 60px;
     margin: 2rem;
     flex-wrap: nowrap; }
     .primary-header .logo-container-mobil .logo-mobil {
@@ -40,13 +40,19 @@ html {
     list-style: none;
     position: fixed;
     inset: 0 0 40% 35%;
+    z-index: 1000;
     background-color: white;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     filter: drop-shadow(2px 2px 5px #7F7F7F);
     flex-direction: column;
-    padding: 2.4rem 2rem;
-    padding-right: 1rem; }
+    padding: 8rem 2rem;
+    padding-right: 1rem;
+    transform: translateX(100%);
+    transition: transform 350ms ease-in; }
+    @media screen and (min-width: 820px) {
+      .primary-header .primary-nav {
+        transform: translateX(0%); } }
     .primary-header .primary-nav li {
       margin-bottom: 1.5rem;
       margin-right: 1.4rem;
@@ -79,32 +85,40 @@ html {
         position: unset;
         background-color: unset;
         filter: unset; } }
-    .primary-header .primary-nav .nav-titles {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8rem; }
-      @media screen and (min-width: 820px) {
-        .primary-header .primary-nav .nav-titles h1 {
-          display: none; } }
-      .primary-header .primary-nav .nav-titles .logo-nav {
-        width: 60px;
-        margin-right: 1.4rem; }
-        @media screen and (min-width: 820px) {
-          .primary-header .primary-nav .nav-titles .logo-nav {
-            display: none; } }
+    .primary-header .primary-nav .primary-nav[data-visible="true"] {
+      transform: translateX(0%); }
+  .primary-header .primary-nav[data-visible="true"] {
+    transform: translateX(0%); }
+  .primary-header .menu-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background: url(../../../icons/menu_oso_lila.svg);
+    background-repeat: no-repeat;
+    border: 0;
+    width: 2.4rem;
+    aspect-ratio: 1;
+    right: 2.4rem; }
+    @media screen and (min-width: 820px) {
+      .primary-header .menu-toggle {
+        display: none; } }
+  .primary-header .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /* added line */
+    border: 0; }
 
 .primary-header .primary-nav li a {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   color: #8d43f0; }
-
-.primary-header .primary-nav .nav-titles h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #c9aecf; }
 
 * {
   margin: 0px;
