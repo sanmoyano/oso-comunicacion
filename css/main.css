@@ -50,10 +50,15 @@ html {
     transition: transform 350ms ease-in; }
     @media screen and (min-width: 820px) {
       .primary-header .primary-nav {
-        transform: translateX(0%); } }
+        transform: translateX(0%);
+        background-color: unset !important;
+        filter: unset !important; } }
     .primary-header .primary-nav h1 {
       position: absolute;
       top: 4rem; }
+      @media screen and (min-width: 820px) {
+        .primary-header .primary-nav h1 {
+          display: none; } }
     .primary-header .primary-nav li {
       margin-bottom: 1.5rem;
       margin-right: 1.4rem;

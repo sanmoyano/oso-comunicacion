@@ -56,11 +56,17 @@
 
         @include desktop {
             transform: translateX(0%);
+            background-color: unset !important;
+            filter: unset !important;
         }
         h1 {
             position: absolute;
             top: 4rem;
             @extend %menu-oso;
+            
+            @include desktop {
+                display: none;
+            }
         }
 
 
