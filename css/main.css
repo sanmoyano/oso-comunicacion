@@ -82,10 +82,11 @@ html {
       display: flex;
       align-items: baseline;
       flex-direction: row;
-      justify-content: space-around;
-      margin-block: auto; }
+      justify-content: flex-start;
+      margin-block: auto;
+      gap: 1.2rem; }
       .primary-header .primary-nav .primary-nav-redes a img {
-        width: 50px; }
+        width: 40px; }
   .primary-header .primary-nav[data-visible="true"] {
     transform: translateX(0%); }
   .primary-header .menu-toggle[aria-expanded="true"] {
