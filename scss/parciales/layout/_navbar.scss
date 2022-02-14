@@ -7,6 +7,13 @@
 }
 
 // primary-header
+// .primary-header[aria-expanded="true"] {
+//     background-color: white;
+//     filter: drop-shadow(2px 2px 5px $gris-oscuro-oso);
+//     border-bottom-left-radius: 16px;
+//     border-bottom-right-radius: 16px;
+// }
+
 .primary-header {
 	align-items: center;
 	justify-content: space-between;
@@ -74,22 +81,35 @@
 			margin-right: 1.4rem;
 			border-bottom: solid $gris-claro-oso 1px;
 			padding: 0.5rem;
+
+			a {
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				margin-inline-end: 2rem;
+				font-family: $navbar-oso;
+				font-size: 1.6rem;
+				font-weight: 700;
+				color: $lila-oso;
+			}
+
+			span {
+				margin-inline-end: 1rem;
+				.iconos-navbar {
+					width: 24px;
+				}
+			}
 		}
 
-		a {
+		.primary-nav-redes {
 			display: flex;
-			align-items: center;
-			text-decoration: none;
-			margin-inline-end: 2rem;
-			font-family: $navbar-oso;
-			font-size: 1.6rem;
-			font-weight: 700;
-			color: $lila-oso;
-		}
-		span {
-			margin-inline-end: 1rem;
-			.iconos-navbar {
-				width: 24px;
+			align-items: baseline;
+			flex-direction: row;
+			justify-content: space-around;
+			margin-block: auto;
+			a img {
+				width: 50px;
+				// filter: drop-shadow(2px 2px 5px $gris-oscuro-oso);
 			}
 		}
 	}
@@ -104,15 +124,15 @@
 		background-image: url(../../../icons/x_oso_lila.svg);
 	}
 
-    //tablet
-    @include mobilsm {
-        .logo-container-desktop {
-            display: flex;
-        }
-        .logo-container-mobil {
-            display: none;
-        }
-    }
+	//tablet
+	@include mobilsm {
+		.logo-container-desktop {
+			display: flex;
+		}
+		.logo-container-mobil {
+			display: none;
+		}
+	}
 	//desktop
 	@include desktop {
 		padding: 2rem 8rem;
@@ -165,4 +185,3 @@
 		border: 0;
 	}
 }
-

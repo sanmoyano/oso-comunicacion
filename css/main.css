@@ -65,19 +65,27 @@ html {
       margin-right: 1.4rem;
       border-bottom: solid #CECECE 1px;
       padding: 0.5rem; }
-    .primary-header .primary-nav a {
+      .primary-header .primary-nav li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-inline-end: 2rem;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #8d43f0; }
+      .primary-header .primary-nav li span {
+        margin-inline-end: 1rem; }
+        .primary-header .primary-nav li span .iconos-navbar {
+          width: 24px; }
+    .primary-header .primary-nav .primary-nav-redes {
       display: flex;
-      align-items: center;
-      text-decoration: none;
-      margin-inline-end: 2rem;
-      font-family: "Roboto", sans-serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #8d43f0; }
-    .primary-header .primary-nav span {
-      margin-inline-end: 1rem; }
-      .primary-header .primary-nav span .iconos-navbar {
-        width: 24px; }
+      align-items: baseline;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-block: auto; }
+      .primary-header .primary-nav .primary-nav-redes a img {
+        width: 50px; }
   .primary-header .primary-nav[data-visible="true"] {
     transform: translateX(0%); }
   .primary-header .menu-toggle[aria-expanded="true"] {
