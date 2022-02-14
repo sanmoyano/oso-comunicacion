@@ -14,85 +14,20 @@ html {
 
 .primary-header {
   align-items: center;
-  justify-content: space-between; }
-  .primary-header .logo-container {
-    width: 150px;
-    margin: 2.4rem; }
-    .primary-header .logo-container .logo {
+  justify-content: space-between;
+  padding: 2rem 2.4rem; }
+  .primary-header .logo-container-desktop {
+    width: 15rem;
+    display: none; }
+    .primary-header .logo-container-desktop .logo-desktop {
       width: 100%; }
-    @media screen and (max-width: 550px) {
-      .primary-header .logo-container {
-        width: 120px; } }
-    @media screen and (max-width: 449px) {
-      .primary-header .logo-container {
-        display: none; } }
   .primary-header .logo-container-mobil {
-    display: none;
-    width: 60px;
-    margin: 2rem;
-    flex-wrap: nowrap; }
+    width: 6rem; }
     .primary-header .logo-container-mobil .logo-mobil {
       width: 100%; }
-    @media screen and (max-width: 449px) {
+    @media screen and (min-width: 860px) {
       .primary-header .logo-container-mobil {
-        display: flex; } }
-  .primary-header .primary-nav {
-    list-style: none;
-    position: fixed;
-    inset: 0 0 30% 35%;
-    z-index: 1000;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    flex-direction: column;
-    padding: 12rem 2rem;
-    padding-right: 1rem;
-    transform: translateX(100%);
-    transition: transform 350ms ease-in; }
-    @media screen and (min-width: 820px) {
-      .primary-header .primary-nav {
-        transform: translateX(0%);
-        background-color: unset !important;
-        filter: unset !important; } }
-    .primary-header .primary-nav h1 {
-      position: absolute;
-      top: 4rem; }
-      @media screen and (min-width: 820px) {
-        .primary-header .primary-nav h1 {
-          display: none; } }
-    .primary-header .primary-nav li {
-      margin-bottom: 1.5rem;
-      margin-right: 1.4rem;
-      border-bottom: solid #CECECE 1px;
-      padding: .5rem; }
-      @media screen and (min-width: 820px) {
-        .primary-header .primary-nav li {
-          margin-bottom: unset;
-          margin-right: unset;
-          border-bottom: unset;
-          padding: unset; } }
-      .primary-header .primary-nav li a {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        margin-inline-end: 2rem; }
-      .primary-header .primary-nav li span {
-        margin-inline-end: 1rem; }
-        .primary-header .primary-nav li span .iconos-navbar {
-          width: 26px; }
-          @media screen and (min-width: 820px) {
-            .primary-header .primary-nav li span .iconos-navbar {
-              display: none; } }
-    @media screen and (min-width: 820px) {
-      .primary-header .primary-nav {
-        flex-direction: row;
-        align-items: center;
-        padding: unset;
-        inset: unset;
-        position: unset;
-        background-color: unset;
-        filter: unset; } }
-  .primary-header .primary-nav[data-visible="true"] {
-    transform: translateX(0%); }
+        display: none; } }
   .primary-header .menu-toggle {
     display: block;
     position: absolute;
@@ -104,11 +39,79 @@ html {
     width: 2.4rem;
     aspect-ratio: 1;
     right: 2.4rem; }
-    @media screen and (min-width: 820px) {
-      .primary-header .menu-toggle {
-        display: none; } }
+  .primary-header .primary-nav {
+    --gap: 4em;
+    list-style: none;
+    position: fixed;
+    inset: 0 0 0 30%;
+    z-index: 1000;
+    background-color: white;
+    filter: drop-shadow(2px 2px 5px #7F7F7F);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    flex-direction: column;
+    padding: 10vh 2rem;
+    padding-right: 1rem;
+    transform: translateX(100%);
+    transition: transform 350ms ease-in; }
+    .primary-header .primary-nav h1 {
+      display: flex;
+      top: 4rem;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #c9aecf; }
+    .primary-header .primary-nav li {
+      margin-right: 1.4rem;
+      border-bottom: solid #CECECE 1px;
+      padding: 0.5rem; }
+    .primary-header .primary-nav a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      margin-inline-end: 2rem;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #8d43f0; }
+    .primary-header .primary-nav span {
+      margin-inline-end: 1rem; }
+      .primary-header .primary-nav span .iconos-navbar {
+        width: 24px; }
+  .primary-header .primary-nav[data-visible="true"] {
+    transform: translateX(0%); }
   .primary-header .menu-toggle[aria-expanded="true"] {
     background-image: url(../../../icons/x_oso_lila.svg); }
+  @media screen and (min-width: 650px) {
+    .primary-header .logo-container-desktop {
+      display: flex; }
+    .primary-header .logo-container-mobil {
+      display: none; } }
+  @media screen and (min-width: 860px) {
+    .primary-header {
+      padding: 2rem 8rem; }
+      .primary-header .menu-toggle {
+        display: none; }
+      .primary-header .logo-container-desktop {
+        display: flex; }
+      .primary-header .primary-nav {
+        gap: unset;
+        flex-direction: row;
+        align-items: center;
+        padding: unset;
+        inset: unset;
+        position: unset;
+        background-color: unset;
+        filter: unset;
+        transform: translateX(0%);
+        background-color: unset !important;
+        filter: unset !important; }
+        .primary-header .primary-nav h1 {
+          display: none; }
+        .primary-header .primary-nav li {
+          border-bottom: unset; }
+        .primary-header .primary-nav span {
+          display: none; } }
   .primary-header .sr-only {
     position: absolute;
     width: 1px;
@@ -120,22 +123,6 @@ html {
     white-space: nowrap;
     /* added line */
     border: 0; }
-
-.primary-header .primary-nav li a {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #8d43f0; }
-
-.primary-header .primary-nav h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #c9aecf; }
-
-.primary-header .primary-nav {
-  background-color: white;
-  filter: drop-shadow(2px 2px 5px #7F7F7F); }
 
 * {
   margin: 0px;
