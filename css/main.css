@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500o&display=swap");
+.body-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "header" "main" "footer"; }
+  .body-grid-container header {
+    grid-area: header; }
+  .body-grid-container main {
+    grid-area: main; }
+  .body-grid-container footer {
+    grid-area: footer; }
+
+.card-grid-container {
+  display: grid; }
+
 * {
   margin: 0px;
   padding: 0px;
