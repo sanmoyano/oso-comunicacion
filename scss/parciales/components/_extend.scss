@@ -54,6 +54,13 @@
     text-align: justify;
 }
 
+%body-oso-white {
+    font-family: $body-oso;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $blanco-oso;
+}
+
 %sombra-menu-oso {
     background-color: $blanco-oso;
     filter: drop-shadow(2px 2px 5px $gris-oscuro-oso);
