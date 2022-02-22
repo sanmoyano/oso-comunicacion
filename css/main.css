@@ -138,36 +138,46 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-around; }
   .hero-section .hero-section-content {
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .hero-section .hero-section-content .hero-section-info p {
-      width: 60vw; }
+    display: inline-block; }
+    .hero-section .hero-section-content h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 3.4rem;
+      font-weight: 700;
+      line-height: 35px;
+      text-transform: uppercase;
+      color: #8d43f0;
+      display: inline; }
+      @media screen and (min-width: 860px) {
+        .hero-section .hero-section-content h1 {
+          font-size: 6.8rem;
+          line-height: 70px; } }
+    @media screen and (min-width: 860px) {
+      .hero-section .hero-section-content {
+        width: 30vw; } }
   .hero-section .hero-section-img {
+    width: 300px;
     padding: 2.4rem; }
+    @media screen and (min-width: 860px) {
+      .hero-section .hero-section-img {
+        width: 450px; } }
+  @media screen and (min-width: 860px) {
+    .hero-section {
+      flex-direction: row; } }
 
-.hero-section .hero-section-content .hero-section-info h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.4rem;
-  font-weight: 700;
-  line-height: 35px;
-  text-transform: uppercase;
-  color: #8d43f0; }
-
-.hero-section .hero-section-content .hero-section-info div {
+.hero-section .hero-section-content div {
   font-family: "Roboto", sans-serif;
   font-size: 2.4rem;
   font-weight: 500;
   color: #ffd104; }
 
-.hero-section .hero-section-content .hero-section-info p {
+.hero-section .hero-section-content p {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  color: #7F7F7F; }
+  color: #7F7F7F;
+  text-align: justify; }
 
 * {
   margin: 0px;

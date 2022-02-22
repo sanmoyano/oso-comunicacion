@@ -9,6 +9,14 @@
     text-transform: uppercase;
     color: $lila-oso;
 }
+%titulo-uno-oso-desktop {
+    font-family: $titulo-uno-oso;
+    font-size: 6.8rem; 
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: $lila-oso;
+}
 
 %titulo-dos-oso {
     font-family: $tiutlo-dos-oso;
@@ -43,6 +51,7 @@
     font-size: 1.6rem;
     font-weight: 400;
     color: $gris-oscuro-oso;
+    text-align: justify;
 }
 
 %sombra-menu-oso {
