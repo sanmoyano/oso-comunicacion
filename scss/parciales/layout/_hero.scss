@@ -1,7 +1,7 @@
 .hero-section {
 	margin: 2.4rem;
 	display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
@@ -29,10 +29,6 @@
 	}
 
 	.hero-section-img {
-        position: absolute;
         padding: 2.4rem;
-		width: 250px;
-        right: 0rem;
-        opacity: 0.3;
 	}
 }
