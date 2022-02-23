@@ -1,28 +1,31 @@
 @import "../utilities/variables";
 
 main {
-    background-image: linear-gradient(
-        120deg,
-        $lila-oso,
-        $degrade2,
-        $degrade3,
-        $degrade4,
-        $celeste-oso,
-        $degrade6
-    );
-    background-size: 200%;
-    animation: bg-animation 8s infinite alternate;
+	background: linear-gradient(
+		120deg,
+		$lila-oso,
+		$degrade2,
+		$degrade3,
+		$degrade4,
+		$celeste-oso,
+		$degrade6
+	);
+	background-size: 200%;
+	animation: bg-animation 8s infinite alternate;
 }
 
 @keyframes bg-animation {
-    0% {background-position: left;}
-    100% {background-position: right;}
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
 }
 
-.card-container {
-    padding: 2.4rem;
-    background: radial-gradient(#ffd104 20%, rgba(255, 255, 255, 0) 20%);
-    background-size: 40px 40px;
-    background-position:0px 50px;
-    width: 30vw;
+.polka-dots {
+    position: relative;
+    background-image: radial-gradient(#ffd104 5px, transparent 1px);
+    background-size: 30px 30px;
+    width: 125px;
 }
