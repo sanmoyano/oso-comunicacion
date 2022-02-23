@@ -1,0 +1,32 @@
+@import "../utilities/variables";
+
+main {
+	background: linear-gradient(
+		120deg,
+		$lila-oso,
+		$degrade2,
+		$degrade3,
+		$degrade4,
+		$celeste-oso,
+		$degrade6
+	);
+	background-size: 200%;
+	animation: bg-animation 8s infinite alternate;
+}
+
+@keyframes bg-animation {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
+}
+
+.polka-dots {
+    position: relative;
+    margin-inline: 2.4rem;
+    background-image: radial-gradient(#ffd104 5px, transparent 1px);
+    background-size: 30px 30px;
+    width: 125px;
+}
