@@ -18,8 +18,8 @@
     height: auto;
     display: flex;
     z-index: 1000;
-    // border-bottom-left-radius: 16px; 
-    // border-bottom-right-radius: 16px; 
+    border-bottom-left-radius: 16px; 
+    border-bottom-right-radius: 16px; 
     box-shadow: 2px 2px 5px $gris-claro-oso;
 
 	.logo-container-desktop {
@@ -62,8 +62,8 @@
 		z-index: 1000;
 		background-color: $blanco-oso;
 		filter: drop-shadow(2px 2px 5px $gris-claro-oso);
-		// border-top-left-radius: 16px;
-		// border-bottom-left-radius: 16px;
+		border-top-left-radius: 16px;
+		border-bottom-left-radius: 16px;
 		flex-direction: column;
 		padding: min(40vh, 10vh) 2rem;
 		padding-right: 1rem;

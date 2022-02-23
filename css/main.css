@@ -37,6 +37,8 @@ html {
   height: auto;
   display: flex;
   z-index: 1000;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   box-shadow: 2px 2px 5px #CECECE; }
   .primary-header .logo-container-desktop {
     width: 15rem;
@@ -69,6 +71,8 @@ html {
     z-index: 1000;
     background-color: white;
     filter: drop-shadow(2px 2px 5px #CECECE);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
     flex-direction: column;
     padding: 10vh 2rem;
     padding-right: 1rem;
