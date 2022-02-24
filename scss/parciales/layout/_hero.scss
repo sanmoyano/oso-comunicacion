@@ -7,10 +7,10 @@
 		align-items: center;
 		justify-content: space-around;
 		margin-top: 12.4rem;
-		margin-inline: 1.6rem;
 	
 		.hero-section-content {
 			display: inline-block;
+			margin: 2.4rem;
 	
 			h1 {
 				font-family: $titulo-uno-oso;
@@ -50,6 +50,7 @@
 		.main-quienes {
 			display: flex;
 			height: 90vh;
+			margin: .5rem;
 			align-items: center;
 			// margin-inline: 2rem;
 			background-image: url(../../../img/fondo-oso.svg);

@@ -1,16 +1,14 @@
+
 .container-card-servicios {
     position: relative;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
     flex-wrap: wrap;
     z-index: 1;
-    h2 { 
-        @extend %titulo-section-oso; 
-        padding: 2.4rem;
-    }
+
 
     .card-servicios {
         position: relative;

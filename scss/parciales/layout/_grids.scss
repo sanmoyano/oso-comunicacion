@@ -22,5 +22,10 @@
 }
 
 .card-grid-container {
+    h2 { 
+        @extend %titulo-section-oso; 
+        padding: 2.4rem;
+        margin: auto;
+    }
     display: grid;
 }
