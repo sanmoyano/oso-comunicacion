@@ -1,155 +1,191 @@
-@import "../utilities/variables"; //variables
 @import "../base/reset"; //reset
+@import "../utilities/variables"; //variables
 
-// primary-header
 .flex {
-    display: flex;
-    gap: var(--gap, 1rem)
+	display: flex;
+	gap: var(--gap, 1rem);
 }
+
+
+
 .primary-header {
-    align-items: center;
+	align-items: center;
     justify-content: space-between;
-    
-    //logo completo - desktop tablet
-    .logo-container {
-        width: 150px;
-        margin: 2.4rem;  
-        .logo {
-            width: 100%
-        }
-        @include mobilsm {
-            width: 120px;
-        }
-        @include mobilxsm {
-            display: none;
-        }
-    }
+    padding: 2rem 2.4rem;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    height: auto;
+    display: flex;
+    z-index: 1000;
+    border-bottom-left-radius: 16px; 
+    border-bottom-right-radius: 16px; 
+    box-shadow: 2px 2px 5px $gris-claro-oso;
 
-    //logo mobilxs
-    .logo-container-mobil {
-        display: none;
-        width: 60px;
-        margin: 2rem;
-        flex-wrap: nowrap;
-        .logo-mobil {
-            width: 100%;
-        }
-        @include mobilxsm {
-            display: flex;
-        }
-    }
+	.logo-container-desktop {
+		width: min(15rem);
+		display: none;
+		.logo-desktop {
+			width: 100%;
+		}
+	}
 
-    //elementos del nav -- mobil first
-    .primary-nav {
-        list-style: none;
-        position: fixed;
-        inset: 0 0 30% 35%;
-        z-index: 1000;
-        @extend %sombra-menu-oso;
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
-        flex-direction: column;
-        padding: 12rem 2rem;
-        padding-right: 1rem;
-        transform: translateX(100%);
-        transition: transform 350ms ease-in;
+	.logo-container-mobil {
+		width: min(6rem);
+		.logo-mobil {
+			width: 100%;
+		}
+		@include desktop {
+			display: none;
+		}
+	}
 
-        @include desktop {
-            transform: translateX(0%);
-            background-color: unset !important;
-            filter: unset !important;
-        }
-        h1 {
-            position: absolute;
-            top: 4rem;
-            @extend %menu-oso;
-            
-            @include desktop {
-                display: none;
-            }
-        }
+	//mobil first
+	.menu-toggle {
+		display: block;
+		position: absolute;
+		z-index: 9999;
+		background-color: unset;
+		background-image: url(../../../icons/menu_oso_lila.svg);
+		background-repeat: no-repeat;
+		border: 0;
+		width: 2.4rem;
+		aspect-ratio: 1;
+		right: 2.4rem;
+	}
 
+	.primary-nav {
+		--gap: 4em;
+		list-style: none;
+		position: fixed;
+		inset: 0 0 0 30%;
+		z-index: 1000;
+		background-color: $blanco-oso;
+		filter: drop-shadow(2px 2px 5px $gris-claro-oso);
+		border-top-left-radius: 16px;
+		border-bottom-left-radius: 16px;
+		flex-direction: column;
+		padding: min(40vh, 10vh) 2rem;
+		padding-right: 1rem;
+		transform: translateX(100%);
+		transition: transform 350ms ease-in;
 
-        li {
-            margin-bottom: 1.5rem;
-            margin-right: 1.4rem;
-            border-bottom: solid $gris-claro-oso 1px;
-            padding: .5rem;
-            @include desktop {
-                margin-bottom: unset;
-                margin-right: unset;;
-                border-bottom:unset;
-                padding: unset;
-            }
-            
-            a {
-                display: flex;
-                align-items: center;
-                text-decoration: none;
-                margin-inline-end: 2rem;
-                @extend %navbar-oso;
-            }
-            span {
-                margin-inline-end: 1rem;
-                .iconos-navbar {
-                    width: 26px;
-                    @include desktop {
-                        display: none;
-                    }
-                }
-            }
-        }
+		//elementos del navbar
+		h1 {
+			display: flex;
+			top: 4rem;
+			font-family: $headline-oso;
+			font-size: 1.6rem;
+			font-weight: 700;
+			color: $lila-oso-pastel;
+		}
 
-        //desktop media query
-        @include desktop {
-            flex-direction: row;
-            align-items: center;
-            padding: unset;
-            inset: unset;
-            position: unset;
-            background-color: unset;
-            filter: unset;
-        }    
-    }
+		li {
+			margin-right: 1.4rem;
+			border-bottom: solid $gris-claro-oso 1px;
+			padding: 0.5rem;
 
-    //para hacer el desplegado cuando se hace click
-    .primary-nav[data-visible="true"] {
-        transform: translateX(0%);
-    }
+			a {
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				margin-inline-end: 2rem;
+				font-family: $navbar-oso;
+				font-size: 1.6rem;
+				font-weight: 700;
+				color: $lila-oso;
+			}
 
-    //menu desplegable 
-    .menu-toggle {
-        display: block;
-        position:absolute;
-        z-index: 9999;
-        background-color: unset;
-        background-image: url(../../../icons/menu_oso_lila.svg);
-        background-repeat: no-repeat;
-        border: 0;
-        width: 2.4rem;
-        aspect-ratio: 1;
-        right: 2.4rem;
-        @include desktop {
-            display: none;
-        }
-    }
-    //aparece la cruz
-    .menu-toggle[aria-expanded="true"] {
-        background-image: url(../../../icons/x_oso_lila.svg);
-    }
-    .sr-only {
-        position: absolute; 
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px; 
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap; /* added line */
-        border: 0;
-    }
+			span {
+				margin-inline-end: 1rem;
+				.iconos-navbar {
+					width: 24px;
+				}
+			}
+		}
+
+		.primary-nav-redes {
+			display: flex;
+			align-items: baseline;
+			flex-direction: row;
+			justify-content: center;
+			margin-block: auto;
+            gap: 1.2rem;
+			a img {
+				width: 40px;
+				// filter: drop-shadow(2px 2px 5px $gris-oscuro-oso);
+			}
+		}
+	}
+
+	//para hacer el desplegado cuando se hace click
+	.primary-nav[data-visible="true"] {
+		transform: translateX(0%);
+	}
+
+	//aparece la cruz cuando esta abierto el menu
+	.menu-toggle[aria-expanded="true"] {
+		background-image: url(../../../icons/x_oso_lila.svg);
+	}
+
+	//tablet
+	@include mobilsm {
+		.logo-container-desktop {
+			display: flex;
+		}
+		.logo-container-mobil {
+			display: none;
+		}
+	}
+	//desktop
+	@include desktop {
+		padding: 2rem 8rem;
+
+		.menu-toggle {
+			display: none;
+		}
+
+		.logo-container-desktop {
+			display: flex;
+		}
+
+		.primary-nav {
+			gap: unset;
+			flex-direction: row;
+			align-items: center;
+			padding: unset;
+			inset: unset;
+			position: unset;
+			background-color: unset;
+			filter: unset;
+
+			transform: translateX(0%);
+			background-color: unset !important;
+			filter: unset !important;
+
+			h1 {
+				display: none;
+			}
+
+			li {
+				border-bottom: unset;
+			}
+
+			span {
+				display: none;
+			}
+		}
+	}
+
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap; /* added line */
+		border: 0;
+	}
 }
-
-
-
-

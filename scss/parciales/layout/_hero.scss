@@ -1,0 +1,81 @@
+.hero-section-container {
+	background-color: white;
+	.hero-section {
+		// margin-inline: 2.4rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		margin-top: 12.4rem;
+		margin-inline: 1.6rem;
+	
+		.hero-section-content {
+			display: inline-block;
+	
+			h1 {
+				font-family: $titulo-uno-oso;
+				font-size: 3.4rem;
+				font-weight: 700;
+				line-height: 35px;
+				text-transform: uppercase;
+				color: $lila-oso;
+				display: inline;
+				@include desktop {
+					font-size: 6.8rem;
+					line-height: 70px;
+				}
+			}
+	
+			div {
+				@extend %titulo-dos-oso;
+			}
+	
+			p {
+				@extend %body-oso;
+			}
+	
+			@include desktop {
+				width: 30vw;
+			}
+		}
+	
+		.hero-section-img {
+			width: 300px;
+			padding: 2.4rem;
+			@include desktop {
+				width: 450px;
+			}
+		}
+
+		.main-quienes {
+			display: flex;
+			height: 90vh;
+			align-items: center;
+			// margin-inline: 2rem;
+			background-image: url(../../../img/fondo-oso.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+		
+			.quienes-content {
+				display: inline;
+				text-align: center;
+				padding: 4rem;
+				h2 {
+					@extend %titulo-dos-oso; 
+				}
+			
+				p {
+					text-align: start;  
+					padding: 1rem; 
+					@extend %body-oso-white;
+				}
+			}
+		
+		}
+	
+		//MEDIA QUARYS
+		@include desktop {
+			flex-direction: row;
+		}
+	}
+}

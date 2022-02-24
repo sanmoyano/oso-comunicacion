@@ -1,0 +1,59 @@
+.container-card-servicios {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+    h2 { 
+        @extend %titulo-section-oso; 
+        padding: 2.4rem;
+    }
+
+    .card-servicios {
+        position: relative;
+        width: 280px;
+        height: 350px;
+        margin: auto;
+        margin-block: 2.4rem;
+        box-shadow: $sombra;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: $borde;
+        border-left: $borde;
+        backdrop-filter: blur(5px);
+
+        .card-servicios-content {
+            padding: 2rem;
+            text-align: center;
+            transition: 0.5s;
+            img {
+                width: 150px;
+                margin: 2.4rem;
+            }
+
+            h2 {
+                font-family: $titulo-dos-oso;
+                font-weight: 500;
+                font-size: 2.4rem;
+                color: $texto;
+                margin: 1rem;
+                line-height: 2.4rem;
+            }
+
+            p {
+                font-family: $body-oso;
+                font-weight: 400;
+                font-size: 1.6rem;
+                color: $texto;
+            }
+        }
+    }
+}
+
