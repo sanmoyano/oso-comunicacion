@@ -191,22 +191,6 @@ html {
     .hero-section {
       flex-direction: row; } }
 
-.main-quienes {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  margin-inline: 2rem;
-  background-image: url(../../../img/fondo-oso.svg);
-  background-repeat: no-repeat;
-  background-position: center; }
-  .main-quienes .quienes-content {
-    display: inline;
-    text-align: center;
-    padding: 2.4rem; }
-    .main-quienes .quienes-content p {
-      text-align: start;
-      padding: 2rem; }
-
 .container-card-servicios {
   position: relative;
   display: flex;
@@ -269,7 +253,7 @@ main {
   background-size: 30px 30px;
   width: 125px; }
 
-.hero-section .hero-section-content div, .main-quienes .quienes-content h2 {
+.hero-section .hero-section-content div {
   font-family: "Roboto", sans-serif;
   font-size: 2.4rem;
   font-weight: 500;
@@ -281,12 +265,6 @@ main {
   font-weight: 400;
   color: #7F7F7F;
   text-align: justify; }
-
-.main-quienes .quienes-content p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: white; }
 
 * {
   margin: 0px;
