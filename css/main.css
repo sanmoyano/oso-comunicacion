@@ -210,16 +210,20 @@ html {
 .container-card-servicios {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
   flex-wrap: wrap;
   z-index: 1; }
+  .container-card-servicios h2 {
+    padding: 2.4rem; }
   .container-card-servicios .card-servicios {
     position: relative;
     width: 280px;
     height: 350px;
-    margin-block: 1.2rem;
+    margin: auto;
+    margin-block: 2.4rem;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.1);
@@ -227,8 +231,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
-    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    border-left: 1px solid rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(5px); }
     .container-card-servicios .card-servicios .card-servicios-content {
       padding: 2rem;
@@ -251,7 +255,7 @@ html {
         color: white; }
 
 main {
-  background: linear-gradient(120deg, #8d43f0, #7C6BE6, #689BDA, #5BBAD2, #4ddcca, #6DEBDB);
+  background: linear-gradient(120deg, #8d43f0, #7C6BE6, #689BDA, #5BBAD2, #4ddcca, #5BBAD2, #689BDA, #7C6BE6, #8d43f0);
   background-size: 200%;
   animation: bg-animation 8s infinite alternate; }
 
@@ -260,6 +264,18 @@ main {
     background-position: left; }
   100% {
     background-position: right; } }
+
+.polka-dots {
+  position: relative;
+  margin: 2.4rem;
+  background-image: radial-gradient(#ffd104 5px, transparent 1px);
+  background-size: 30px 30px; }
+
+.container-card-servicios h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.4rem;
+  font-weight: 500;
+  color: white; }
 
 .hero-section-container .hero-section .hero-section-content div, .main-quienes .quienes-content h2 {
   font-family: "Roboto", sans-serif;

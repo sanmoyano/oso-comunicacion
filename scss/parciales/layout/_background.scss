@@ -8,7 +8,10 @@ main {
 		$degrade3,
 		$degrade4,
 		$celeste-oso,
-		$degrade6
+		$degrade4,
+		$degrade3,
+		$degrade2,
+		$lila-oso
 	);
 	background-size: 200%;
 	animation: bg-animation 8s infinite alternate;
@@ -23,11 +26,11 @@ main {
 	}
 }
 
-// .polka-dots {
-//     position: relative;
-//     margin-inline: 2.4rem;
-// 	padding-block: 2.4rem;
-//     background-image: radial-gradient(#ffd104 5px, transparent 1px);
-//     background-size: 30px 30px;
-//     width: 125px;
-// }
+.polka-dots {
+    position: relative;
+	margin: 2.4rem;
+    background-image: radial-gradient(#ffd104 5px, transparent 1px);
+    background-size: 30px 30px;
+	// background-position: 0;
+    // width: 125px;
+}
