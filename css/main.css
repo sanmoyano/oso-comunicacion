@@ -232,8 +232,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.9);
-    border-left: 1px solid rgba(255, 255, 255, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px); }
     .container-card-servicios .card-servicios .card-servicios-content {
       padding: 2rem;
