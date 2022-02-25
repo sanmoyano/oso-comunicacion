@@ -172,19 +172,21 @@ html {
   margin-top: 12.4rem; }
   .hero-section-container .hero-section .hero-section-content {
     display: inline-block;
-    margin: 2.4rem; }
-    .hero-section-container .hero-section .hero-section-content h1 {
-      font-family: "Montserrat", sans-serif;
-      font-size: 3.4rem;
-      font-weight: 700;
-      line-height: 35px;
-      text-transform: uppercase;
-      color: #8d43f0;
-      display: inline; }
-      @media screen and (min-width: 860px) {
-        .hero-section-container .hero-section .hero-section-content h1 {
-          font-size: 6.8rem;
-          line-height: 70px; } }
+    margin: 1rem; }
+    .hero-section-container .hero-section .hero-section-content .content--modifier {
+      padding: 1.4rem; }
+      .hero-section-container .hero-section .hero-section-content .content--modifier h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3.4rem;
+        font-weight: 700;
+        line-height: 35px;
+        text-transform: uppercase;
+        color: #8d43f0;
+        display: inline; }
+        @media screen and (min-width: 860px) {
+          .hero-section-container .hero-section .hero-section-content .content--modifier h1 {
+            font-size: 6.8rem;
+            line-height: 70px; } }
     @media screen and (min-width: 860px) {
       .hero-section-container .hero-section .hero-section-content {
         width: 30vw; } }
@@ -281,13 +283,13 @@ html {
   font-weight: 500;
   color: white; }
 
-.hero-section-container .hero-section .hero-section-content div, .hero-section-container .hero-section .main-quienes .quienes-content h2 {
+.hero-section-container .hero-section .hero-section-content .content--modifier div, .hero-section-container .hero-section .main-quienes .quienes-content h2 {
   font-family: "Roboto", sans-serif;
   font-size: 2.4rem;
   font-weight: 500;
   color: #ffd104; }
 
-.hero-section-container .hero-section .hero-section-content p {
+.hero-section-container .hero-section .hero-section-content .content--modifier p {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -373,13 +375,13 @@ html {
   font-weight: 500;
   color: white; }
 
-.hero-section-container .hero-section .hero-section-content div, .hero-section-container .hero-section .main-quienes .quienes-content h2 {
+.hero-section-container .hero-section .hero-section-content .content--modifier div, .hero-section-container .hero-section .main-quienes .quienes-content h2 {
   font-family: "Roboto", sans-serif;
   font-size: 2.4rem;
   font-weight: 500;
   color: #ffd104; }
 
-.hero-section-container .hero-section .hero-section-content p {
+.hero-section-container .hero-section .hero-section-content .content--modifier p {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
