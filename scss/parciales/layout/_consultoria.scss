@@ -1,0 +1,45 @@
+@import "../utilities/variables";
+@import "../components/extend";
+
+.consult {
+    background-image: url(../../../img/manchas-oso.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 370px;
+	margin: 1.2rem;
+	.consult__head {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+		img {
+			width: 110px;
+			margin: auto;
+		}
+		h2 {
+			@extend %titulo-uno-oso;
+            padding: 2rem;
+		}
+	}
+	.consult__cards {
+		display: block;
+        padding: 2rem;
+		.consult__cards--content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+			background: white;
+            box-shadow: 0px 4px 4px rgba($gris-oscuro-oso, $alpha: 0.2);
+            margin-bottom: 2.4rem;
+            border-radius: 8px;
+            h3 {
+                padding: 2rem;
+                @extend %body-oso-card;
+            }
+            span {
+                @extend %titulo-uno-oso;
+                padding-right: 1rem;
+            }
+		}
+	}
+}

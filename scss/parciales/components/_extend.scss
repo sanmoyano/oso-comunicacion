@@ -15,7 +15,6 @@
     font-size: 3.4rem; 
     font-weight: 700;
     line-height: 35px;
-    text-transform: uppercase;
     color: $lila-oso;
 }
 
@@ -60,6 +59,14 @@
     font-weight: 400;
     color: $gris-oscuro-oso;
     text-align: justify;
+}
+
+%body-oso-card {
+    font-family: $body-oso;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $gris-oscuro-oso;
+    font-weight: 700
 }
 
 %body-oso-white {
