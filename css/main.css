@@ -253,7 +253,7 @@ html {
         font-size: 1.6rem;
         color: white; }
 
-main {
+.gradient {
   background: linear-gradient(120deg, #8d43f0, #7C6BE6, #689BDA, #5BBAD2, #4ddcca, #5BBAD2, #689BDA, #7C6BE6, #8d43f0);
   background-size: 200%;
   animation: bg-animation 8s infinite alternate; }
@@ -298,6 +298,50 @@ main {
   font-size: 1.6rem;
   font-weight: 400;
   color: white; }
+
+.top-wave {
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg); }
+
+.top-wave svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px; }
+
+.top-wave .shape-fill {
+  fill: white; }
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .top-wave svg {
+    width: calc(100% + 1.3px);
+    height: 40px; } }
+
+.bottom-wave {
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(0deg); }
+
+.bottom-wave svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px; }
+
+.bottom-wave .shape-fill {
+  fill: white; }
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .bottom-wave svg {
+    width: calc(100% + 1.3px);
+    height: 40px; } }
 
 * {
   margin: 0px;
