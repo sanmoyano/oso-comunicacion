@@ -39,6 +39,7 @@ let servicios = [servicio1, servicio2, servicio3, servicio4, servicio5, servicio
 
 let divCardContainer = document.querySelector('#card__container')
 let bodyCardModal = document.querySelector('#body__modal')
+
 servicios.forEach((servicios, indice) => {
     divCardContainer.innerHTML += `
     <div class="card__servicios" id="servicios${indice + 1}">
@@ -52,9 +53,12 @@ servicios.forEach((servicios, indice) => {
 
 servicios.forEach ((servicios, indice) => {
     let openModal = document.querySelector(`#card__inner${indice + 1}`)
+    // openModal.addEventListener ('click', () => {console.log("Hace click")})
     openModal.addEventListener('click', () => {
         bodyCardModal.innerHTML += `
-        
+        <div class="modal"> 
+            <p> HOLA A TODOS </p>
+        </div>
         `
     })
 })
