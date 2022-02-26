@@ -270,6 +270,13 @@ html {
         font-size: 1.6rem;
         color: white; }
 
+.modal {
+  position: absolute;
+  width: 100vw;
+  height: 150px;
+  background-color: red;
+  transition: transform 350ms ease-in; }
+
 .consult .consult__head h2, .consult .consult__cards .consult__cards--content span {
   font-family: "Montserrat", sans-serif;
   font-size: 3.4rem;

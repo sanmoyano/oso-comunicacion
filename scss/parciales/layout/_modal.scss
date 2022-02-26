@@ -1,1 +1,7 @@
-
+.modal {
+    position: absolute;
+    width: 100vw;
+    height: 150px;
+    background-color: red;
+    transition: transform 350ms ease-in;
+}
