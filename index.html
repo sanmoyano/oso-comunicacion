@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body class="body-grid-container">
+<body id="body__modal" class="body-grid-container">
 
     <!-- COMIENZO HEADER -->
     <header class="primary-header flex" aria-expanded="false">
@@ -96,7 +96,7 @@
     <!-- COMIENZO MAIN -->
     <main>
         <!-- card section  -->
-        <section class="card-grid-container gradient">
+        <section class="card__grid-container card-gradient">
             <div class="top-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
@@ -106,49 +106,8 @@
                 </svg>
             </div>
             <h2>Servicios</h2>
-            <div class="container-card-servicios polka__dots">
-                <div id="open-modal" class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/foco_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>Asesoría digital</h2>
-                    </div>
-                </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/celu_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>Social Media Management</h2>
-                    </div>
-                </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/pc_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>E-mail marketing</h2>
-                    </div>
-                </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/altavoz_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>Publicidad Online</h2>
-                    </div>
-                </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/cohete_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>SEO</h2>
-                    </div>
-                </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/camara_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>Fotografía y video</h2>
-                    </div>
-                </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/pantallas_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>Campañas de comunicación</h2>
-                    </div>
-                </div>
+            <div id="card__container" class="card__container-servicios polka__dots">
+                <!--CARDS SERVICIOS-->
             </div>
             <div class="bottom-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"

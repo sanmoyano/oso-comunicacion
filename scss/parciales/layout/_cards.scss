@@ -1,5 +1,5 @@
 
-.container-card-servicios {
+.card__container-servicios {
     position: relative;
     display: flex;
     // flex-direction: column;
@@ -10,7 +10,7 @@
     z-index: 1;
 
 
-    .card-servicios {
+    .card__servicios {
         position: relative;
         width: 280px;
         height: 350px;
@@ -27,7 +27,7 @@
         border-left: $borde;
         backdrop-filter: blur(5px);
 
-        .card-servicios-content {
+        .card__servicios-content {
             padding: 2rem;
             text-align: center;
             transition: 0.5s;
