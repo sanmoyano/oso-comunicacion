@@ -40,16 +40,24 @@
         </button>
 
         <nav class="nav">
-            <ul id="primary-nav" data-visible="false" class="primary-nav underline-indicators flex">
+            <ul id="primary-nav" data-visible="false" class="primary-nav flex">
                 <h1>Menu</h1>
-                <li class="active"><a href="./pages/01quienes.html"><span aria-hidden="true"><img class="iconos-navbar" src="./icons/estrella_oso_amarillo.svg" alt="quienes somos?"></span>¿Quienes somos?</a></li>
-                <li><a href="./pages/02servicios.html"><span aria-hidden="true"><img class="iconos-navbar" src="./icons/blanco_oso_amarillo.svg" alt="quienes somos?"></span>Servicios</a></li>
-                <li><a href="./pages/03consultoria.html"><span aria-hidden="true"><img class="iconos-navbar" src="./icons/lupa_oso_amarillo.svg" alt="quienes somos?"></span>Consultorías</a></li>
-                <li><a href="./pages/04.contacto.html"><span aria-hidden="true"><img class="iconos-navbar" src="./icons/chat_oso_amarillo.svg" alt="quienes somos?"></span>Contacto</a></li>
+                <li class="active"><a href="./pages/01quienes.html"><span aria-hidden="true"><img class="iconos-navbar"
+                                src="./icons/estrella_oso_amarillo.svg" alt="quienes somos?"></span>¿Quienes somos?</a>
+                </li>
+                <li><a href="./pages/02servicios.html"><span aria-hidden="true"><img class="iconos-navbar"
+                                src="./icons/blanco_oso_amarillo.svg" alt="quienes somos?"></span>Servicios</a></li>
+                <li><a href="./pages/03consultoria.html"><span aria-hidden="true"><img class="iconos-navbar"
+                                src="./icons/lupa_oso_amarillo.svg" alt="quienes somos?"></span>Consultorías</a></li>
+                <li><a href="./pages/04.contacto.html"><span aria-hidden="true"><img class="iconos-navbar"
+                                src="./icons/chat_oso_amarillo.svg" alt="quienes somos?"></span>Contacto</a></li>
                 <div class="primary-nav-redes">
-                    <a href="https://www.instagram.com/oso.comunicacion/?hl=es"><img src="./icons/instagram-brands.svg" alt="Instagram"></a>
-                    <a href="https://www.facebook.com/comunicacionoso/"><img src="./icons/facebook-f-brand.svg" alt="Facebook"></a>
-                    <a href="https://www.linkedin.com/company/65675740/admin/"><img src="./icons/linkedin-in-brands.svg" alt="Linkedin"></a>
+                    <a href="https://www.instagram.com/oso.comunicacion/?hl=es"><img src="./icons/instagram-brands.svg"
+                            alt="Instagram"></a>
+                    <a href="https://www.facebook.com/comunicacionoso/"><img src="./icons/facebook-f-brand.svg"
+                            alt="Facebook"></a>
+                    <a href="https://www.linkedin.com/company/65675740/admin/"><img src="./icons/linkedin-in-brands.svg"
+                            alt="Linkedin"></a>
                 </div>
             </ul>
         </nav>
@@ -86,7 +94,7 @@
     <!-- COMIENZO MAIN -->
     <main>
         <!-- card section  -->
-        <section class="card__grid-container card-gradient" id="body__modal">
+        <section class="card__grid-container card-gradient">
             <div class="top-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
@@ -97,13 +105,27 @@
             </div>
             <h2>Servicios</h2>
             <div id="card__container" class="card__container-servicios polka__dots">
-                <!--CARDS SERVICIOS-->
                 <!-- MODAL POP UP -->
-                <div class="modal">
-                    <div class="modal__primary" data-visible="false">
-                        <p>Este es el modal</p>
+                <div id="modal-servicios" class="modal__primary">
+                    <div class="modal__primary--content" data-visible="false">
+                        <div class="button-close">
+                            <button class="modal__button--close"></button>
+                        </div>
+                        <div class="content">
+                            <div class="text__content">
+                                <p><strong>¿Tenes un emprendimiento y necesitás hacer crecer tus redes?</strong></p>
+                                <p>Hoy, las redes sociales definen tu negocio. Queremos acercar estrategias
+                                    digitales confiables y creativas, sin trucos ni palabras difíciles, para que
+                                    puedas exprimir todo lo que tenes para ofrecer.</p>
+                                <p> Consiste en un diagnóstico de tus redes sociales actuales y planes de acción
+                                    específicos y concretos para que apliques en el corto plazo.</p>
+                                <p>Incluye encuentros virtuales, calendario de publicación y material para trabajar.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!--CARDS SERVICIOS-->
             </div>
             <div class="bottom-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
