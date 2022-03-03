@@ -223,7 +223,7 @@ html {
   margin: 2.4rem;
   background-image: radial-gradient(#CECECE 5px, transparent 1px);
   background-size: 30px 30px;
-  width: 130px;
+  width: 100px;
   height: 100%; }
 
 .card__container-servicios {
@@ -441,7 +441,7 @@ html {
   margin: 2.4rem;
   background-image: radial-gradient(#ffd104 5px, transparent 1px);
   background-size: 30px 30px;
-  width: 130px;
+  width: 100px;
   height: 100%; }
 
 .consult .consult__head h2, .consult .consult__cards .consult__cards--content span {
