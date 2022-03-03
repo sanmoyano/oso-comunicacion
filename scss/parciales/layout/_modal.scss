@@ -1,3 +1,6 @@
+@import"../components/extend";
+@import"../utilities/variables";
+
 .modal__primary {
 	.modal__primary--content {
 		display: flex;
@@ -6,7 +9,15 @@
 		position: fixed;
 		inset: 50% 0 0 0;
 		z-index: 1000;
-		background-color: $blanco-oso;
+        // background: linear-gradient(
+        //     120deg,
+        //     $lila-oso,
+        //     $degrade2,
+        //     $degrade3,
+        //     $degrade4,
+        //     $celeste-oso
+        // );
+        background-color: white;
 		filter: drop-shadow(0px 4px 4px $gris-oscuro-oso);
 		border-top-left-radius: 16px;
 		border-top-right-radius: 16px;

@@ -270,6 +270,45 @@ html {
         font-size: 1.6rem;
         color: white; }
 
+.consult .consult__head h2, .consult .consult__cards .consult__cards--content span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 35px;
+  color: #8d43f0; }
+
+.card__grid-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.4rem;
+  font-weight: 500;
+  color: white; }
+
+.hero-section-container .hero-section .hero-section-content .content--modifier div, .hero-section-container .hero-section .main-quienes .quienes-content h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #ffd104; }
+
+.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #7F7F7F;
+  text-align: justify; }
+
+.consult .consult__cards .consult__cards--content h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #7F7F7F;
+  font-weight: 700; }
+
+.hero-section-container .hero-section .main-quienes .quienes-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white; }
+
 .modal__primary .modal__primary--content {
   display: flex;
   --gap: 4em;

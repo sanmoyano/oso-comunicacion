@@ -68,11 +68,10 @@ servicios.forEach((servicios, indice) => {
         let visible = containerModal.getAttribute('data-visible')
         if (visible === "false") {
             containerModal.setAttribute('data-visible', true)
-        } else {
-            closeBtn.addEventListener('click', () => {
-                containerModal.setAttribute('data-visible', false)
-            })
-        }
+        } 
+    })
+    closeBtn.addEventListener('click', () => {
+        containerModal.setAttribute('data-visible', false)
     })
 })
 
