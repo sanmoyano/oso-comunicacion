@@ -27,10 +27,10 @@ class Servicio {
     }
 }
 
-let servicio1 = new Servicio("Asesoria Digital")
+let servicio1 = new Servicio("Asesoría Digital")
 let servicio2 = new Servicio("Social Media Management")
 let servicio3 = new Servicio("E-mail Marketing")
-let servicio4 = new Servicio("publicidad Online")
+let servicio4 = new Servicio("Publicidad Online")
 let servicio5 = new Servicio("SEO")
 let servicio6 = new Servicio("Fotografía y video")
 let servicio7 = new Servicio("Campañas de comunicación")
@@ -52,7 +52,6 @@ servicios.forEach((servicios, indice) => {
 
 
 /*======= MODAL SERVICIOS =======*/
-
 let containerModal = document.querySelector('.modal__primary--content');
 
 servicios.forEach((servicios, indice) => {
@@ -65,7 +64,7 @@ servicios.forEach((servicios, indice) => {
         containerModal.innerHTML = " " 
         containerModal.innerHTML += `
             <div class="button-close">
-                <h3>Asesoria Digital</h3>
+                <h3>${servicios.nombre}</h3>
                 <button id="modal__btn--close${indice + 1}" class="btn__close"></button>
             </div>
             <div class="content">
