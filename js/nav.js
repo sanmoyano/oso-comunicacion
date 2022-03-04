@@ -36,12 +36,8 @@ let servicio6 = new Servicio("Fotografía y video")
 let servicio7 = new Servicio("Campañas de comunicación")
 
 let servicios = [servicio1, servicio2, servicio3, servicio4, servicio5, servicio6, servicio7]
-
-
-
 let divCardContainer = document.querySelector('#card__container')
 let bodyCardModal = document.querySelector('#body__modal')
-
 
 servicios.forEach((servicios, indice) => {
     divCardContainer.innerHTML += `
@@ -57,10 +53,8 @@ servicios.forEach((servicios, indice) => {
 
 /*======= MODAL SERVICIOS =======*/
 
-let modalPrimary = document.querySelector('.modal__primary');
 let containerModal = document.querySelector('.modal__primary--content');
 let closeBtn = document.querySelector('.modal__button--close')
-
 
 servicios.forEach((servicios, indice) => {
     let cardServicios = document.querySelector(`#card__inner${indice + 1}`)
@@ -74,4 +68,5 @@ servicios.forEach((servicios, indice) => {
         containerModal.setAttribute('data-visible', false)
     })
 })
+
 

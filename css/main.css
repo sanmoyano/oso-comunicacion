@@ -289,6 +289,12 @@ html {
   font-weight: 500;
   color: #ffd104; }
 
+.modal__primary .button-close h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: black; }
+
 .hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content p {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
@@ -332,8 +338,10 @@ html {
 .modal__primary .button-close {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: space-between;
   padding-bottom: 2rem; }
+  .modal__primary .button-close h3 {
+    margin-left: 3rem; }
   .modal__primary .button-close .modal__button--close {
     background-color: unset;
     background-image: url(../../../icons/x_oso_lila.svg);
@@ -370,6 +378,12 @@ html {
   font-size: 2.4rem;
   font-weight: 500;
   color: #ffd104; }
+
+.modal__primary .button-close h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: black; }
 
 .hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content p {
   font-family: "Roboto", sans-serif;
@@ -462,6 +476,12 @@ html {
   font-size: 2.4rem;
   font-weight: 500;
   color: #ffd104; }
+
+.modal__primary .button-close h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: black; }
 
 .hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content p {
   font-family: "Roboto", sans-serif;

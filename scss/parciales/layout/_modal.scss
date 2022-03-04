@@ -9,14 +9,6 @@
 		position: fixed;
 		inset: 50% 0 0 0;
 		z-index: 1000;
-        // background: linear-gradient(
-        //     120deg,
-        //     $lila-oso,
-        //     $degrade2,
-        //     $degrade3,
-        //     $degrade4,
-        //     $celeste-oso
-        // );
         background-color: white;
 		filter: drop-shadow(0px 4px 4px $gris-oscuro-oso);
 		border-top-left-radius: 16px;
@@ -34,8 +26,12 @@
 	.button-close {
         display: flex;
         align-items: center;
-        justify-content: right;
+        justify-content: space-between;
         padding-bottom: 2rem;
+		h3{
+			@extend %headline-oso;
+			margin-left: 3rem;
+		}
 		.modal__button--close {
 			background-color: unset;
 			background-image: url(../../../icons/x_oso_lila.svg);
