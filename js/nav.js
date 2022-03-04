@@ -51,7 +51,7 @@ servicios.forEach((servicios, indice) => {
     divCardContainer.innerHTML += `
     <div class="card__servicios" id="servicios${indice + 1}" aria-expanded="false">
         <div id="card__inner${indice + 1}" class="card__servicios-content">
-            <img src="./icons/icono${indice + 1}.svg" alt="asesoría digital">
+            <img src="./icons/icono${indice + 1}.svg" alt="${servicios.nombre}">
             <h2>${servicios.nombre}</h2>
         </div>
     </div>
@@ -94,3 +94,60 @@ servicios.forEach((servicios, indice) => {
 })
 
 
+/*<======= MODAL CONSULTAS =======>*/
+
+class Consulta {
+    constructor(taller, descrip, descripUno, descripDos, descripTres) {
+        this.taller = taller
+        this.descrip = descrip
+        this.descripUno = descripUno
+        this.descripDos = descripDos
+        this.descripTres = descripTres
+    }
+}
+
+let consultaUno = new Consulta ("Consultoria en comunicación con perspectiva de género", "Tomá postura", "¿En que consiste?", ">  Auditoría inicial para evaluar la comunicación actual de tu negocio y un plan para <strong>comenzar a comunicar de forma responsable, igualitaria e inclusiva.</strong>")
+let consultaDos = new Consulta ("Triple impacto en mi negocio", "En Oso tenemos la convicción de que <strong>cualquier negocio, marca o emprendimiento puede ser pensado desde la sustentabilidad y el compromiso social y ambiental.</strong>", "¿En qué consiste?", ">  Auditoría inicial para conocer el negocio y un plan de acción real y concreto para sumar acciones de responsabilidad social.", ">  Campaña de comunicación para difundir las acciones.")
+
+let consultas = [consultaUno, consultaDos]
+let consultasCardContainer = document.querySelector('#consult-cards')
+
+consultas.forEach((consultas, indice) => {
+    consultasCardContainer.innerHTML += `
+    <div id="consultas-modal${indice + 1}" class="consult__cards--content">
+        <h3>${consultas.taller}</h3>
+        <span>>></span>
+    </div>
+    `
+})
+
+let consultModal = document.querySelector('.consult__container')
+
+consultas.forEach((consultas, indice) => {
+    let modalConsultas = document.querySelector(`#consultas-modal${indice + 1}`)
+    console.log(modalConsultas)
+    // modalConsultas.addEventListener('Click', () => {
+    //     console.log("Hace click")
+    //     let visible = modalConsultas.getAttribute('data-visble')
+    //     if(visible === "false") {
+    //         modalConsultas.setAttribute('data-visible', true)
+    //     } else {
+    //         modalConsultas.setAttribute('data-visible', false)
+    //     }
+
+    //     consultModal.innerHTML = " "
+    //     consultModal.innerHTML += `
+    //         <div class="button-close">
+    //             <h3>${servicios.nombre}</h3>
+    //             <button id="modal__btn--close${indice + 1}" class="btn__close"></button>
+    //         </div>
+    //         <div class="content">
+    //             <div class="text__content">
+    //                 <div class="text__content--div">${servicios.parrafo}</div>
+    //                 <div class="text__content--div">${servicios.parrafoUno}</div>
+    //                 <div class="text__content--div">${servicios.parrafoDos}</div>
+    //             </div>
+    //         </div>
+    //     `
+    // })
+})

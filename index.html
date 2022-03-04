@@ -20,7 +20,6 @@
 </head>
 
 <body class="body-grid-container">
-
     <header class="primary-header flex" aria-expanded="false">
         <div class="logo-container">
             <div class="logo-container-mobil">
@@ -101,8 +100,8 @@
             <h2>Servicios</h2>
             <!-- card visibles -->
             <div id="card__container" class="card__container-servicios polka__dots">
+                <!-- modal popUp -->
                 <div class="modal__primary">
-                    <!-- modal popUp -->
                     <div class="modal__primary--content" data-visible="false"></div>
                 </div>
             </div>
@@ -122,15 +121,16 @@
                 <img src="./icons/lupa_oso_amarillo.svg" alt="consultorías">
                 <h2>Consultoría</h2>
             </div>
-            <div class="consult__cards">
-                <div class="consult__cards--content">
+            <div id="consult-cards" class="consult__cards">
+                <div class="consult__container" data-visible="false"></div>
+                <!-- <div class="consult__cards--content">
                     <h3>Consultoria en comunicación con perspectiva de género</h3>
                     <span>>></span>
                 </div>
                 <div class="consult__cards--content">
                     <h3>Triple impacto en mi negocio</h3>
                     <span>>></span>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
