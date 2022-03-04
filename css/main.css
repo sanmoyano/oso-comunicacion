@@ -342,7 +342,7 @@ html {
   padding-bottom: 2rem; }
   .modal__primary .button-close h3 {
     margin-left: 3rem; }
-  .modal__primary .button-close .modal__button--close {
+  .modal__primary .button-close .btn__close {
     background-color: unset;
     background-image: url(../../../icons/x_oso_lila.svg);
     background-repeat: no-repeat;

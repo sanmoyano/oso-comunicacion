@@ -54,7 +54,6 @@ servicios.forEach((servicios, indice) => {
 /*======= MODAL SERVICIOS =======*/
 
 let containerModal = document.querySelector('.modal__primary--content');
-let closeBtn = document.querySelector('.modal__button--close')
 
 servicios.forEach((servicios, indice) => {
     let cardServicios = document.querySelector(`#card__inner${indice + 1}`)
@@ -62,11 +61,25 @@ servicios.forEach((servicios, indice) => {
         let visible = containerModal.getAttribute('data-visible')
         if (visible === "false") {
             containerModal.setAttribute('data-visible', true)
-        } 
+        }
+        containerModal.innerHTML = " " 
+        containerModal.innerHTML += `
+            <div class="button-close">
+                <h3>Asesoria Digital</h3>
+                <button id="modal__btn--close${indice + 1}" class="btn__close"></button>
+            </div>
+            <div class="content">
+                <div class="text__content">
+                    <p><strong>¿Tenes un emprendimiento y necesitás hacer crecer tus redes?</strong></p>
+                </div>
+            </div>
+            `
+            let closeBtn = document.querySelector(`#modal__btn--close${indice + 1}`)
+            closeBtn.addEventListener('click', () => {
+                containerModal.setAttribute('data-visible', false)
+            })
     })
-    closeBtn.addEventListener('click', () => {
-        containerModal.setAttribute('data-visible', false)
-    })
+    
 })
 
 
