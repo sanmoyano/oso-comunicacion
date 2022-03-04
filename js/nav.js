@@ -21,19 +21,27 @@ menuToggle.addEventListener('click', () => {
 
 /*======= CARDS SERVICIOS =======*/
 class Servicio {
-    constructor(nombre, descripcion) {
+    constructor(nombre, parrafo, parrafoUno, parrafoDos) {
         this.nombre = nombre
-        this.descripcion = descripcion
+        this.parrafo = parrafo
+        this.parrafoUno = parrafoUno
+        this.parrafoDos = parrafoDos
     }
 }
 
-let servicio1 = new Servicio("Asesoría Digital")
-let servicio2 = new Servicio("Social Media Management")
-let servicio3 = new Servicio("E-mail Marketing")
-let servicio4 = new Servicio("Publicidad Online")
-let servicio5 = new Servicio("SEO")
-let servicio6 = new Servicio("Fotografía y video")
-let servicio7 = new Servicio("Campañas de comunicación")
+let servicio1 = new Servicio("Asesoría Digital", "¿Tenés un empredimiento y necesitas hacer tus redes?", "Hoy, las redes sociales <strong>definen tu negocio</strong>. Queremos acercar estrategias digitales <strong>confiables y creativas,</strong> sin trucos ni palabras difíciles, para que puedas exprimir todo lo que tenes para ofrecer", "Consiste en un <strong>diagnóstico</strong> de tus redes sociales actuales y <strong>planes de acción específicos y concretos</strong> para que apliques en el corto plazo.")
+
+let servicio2 = new Servicio("Social Media Management", "Tenés que estar en las redes", "Este servicio consiste en la <strong>creación y gestión de las redes sociales de tu negocio.</strong>", "<ul><li>Estrategia digital y calendario de publicación.</li><li>Community management</li><li>Diseño gráfico</li><li>Pauta publicitaria</li><li>Reportes de rendimiento</li></ul>")
+
+let servicio3 = new Servicio("E-mail Marketing", "Realizamos la gestión integral de campañas de e-mail marketing y newsletters.", "El servicio consiste en el alta en una plataforma (o actualización de la existente), gestión de campañas, seguimiento y reportes.", "Pack mínimo > 1 envío mensual, 1 reenvío, seguimiento y reporte.")
+
+let servicio4 = new Servicio("Publicidad Online", "Gestión integral de pauta publicitaria en Facebook Ads y Google Ads.", "Incluye seguimiento de métricas y reportes.", " ")
+
+let servicio5 = new Servicio("SEO", "Te hacemos visible con un plan básico de optimización SEO a un sitio web.", "A través de estrategias y técnicas de posicionamiento SEO, te ayudamos a aumentar las visitas a tu sitio web y a posicionarte en los resultados orgánicos de búsqueda.", "¿Cómo trabajamos? Diagnóstico inicial > Planificación y ejecución de la estrategia SEO > Seguimiento > Reporte.")
+
+let servicio6 = new Servicio("Fotografía y video", "Fotografía de producto, gastronómica y artística.Books grupales e individuales. Reels para redes sociales. Videos institucionales. Videoclips.", "Disponible > consultá para sumar un locutor o locutora con calidad de estudio a tus videos institucionales.", " ")
+
+let servicio7 = new Servicio("Campañas de comunicación","Planificación y ejecución de una campaña de comunicación integral. Se puede elegir para: lanzamientos, posicionamientos, promociones y/o ventas.", "Contempla la estrategia creativa, el plan de marketing, la creación de material audiovisual, la publicidad y el análisis de rendimiento. Es decir, contempla todo." , "Dejalo en nuestras manos. Armamos un pack a medida acorde a las necesidades que tenga tu negocio." )
 
 let servicios = [servicio1, servicio2, servicio3, servicio4, servicio5, servicio6, servicio7]
 let divCardContainer = document.querySelector('#card__container')
@@ -69,7 +77,9 @@ servicios.forEach((servicios, indice) => {
             </div>
             <div class="content">
                 <div class="text__content">
-                    <p><strong>¿Tenes un emprendimiento y necesitás hacer crecer tus redes?</strong></p>
+                    <p><strong>${servicios.parrafo}</strong></p>
+                    <p>${servicios.parrafoUno}</p>
+                    <p>${servicios.parrafoDos}</p>
                 </div>
             </div>
             `
