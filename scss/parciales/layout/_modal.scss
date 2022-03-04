@@ -1,5 +1,5 @@
-@import"../components/extend";
-@import"../utilities/variables";
+@import "../components/extend";
+@import "../utilities/variables";
 
 .modal__primary {
 	.modal__primary--content {
@@ -9,7 +9,7 @@
 		position: fixed;
 		inset: 50% 0 0 0;
 		z-index: 1000;
-        background-color: white;
+		background-color: white;
 		filter: drop-shadow(0px 4px 4px $gris-oscuro-oso);
 		border-top-left-radius: 16px;
 		border-top-right-radius: 16px;
@@ -24,12 +24,12 @@
 	}
 
 	.button-close {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 2rem;
-		h3{
-			@extend %headline-oso;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 2rem;
+		h3 {
+			@extend %headline-modal;
 			margin-left: 3rem;
 		}
 		.btn__close {
@@ -49,12 +49,10 @@
 		width: 100%;
 		padding: min(20vh, 2vh) 2rem;
 		text-align: justify;
-
-		p {
+		.text__content--div {
 			display: inline-block;
 			margin: 0.5rem;
 			@extend %body-oso;
 		}
 	}
 }
-

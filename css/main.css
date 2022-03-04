@@ -293,9 +293,9 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
-  color: black; }
+  color: #7F7F7F; }
 
-.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content p {
+.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content .text__content--div {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -356,7 +356,7 @@ html {
     width: 100%;
     padding: 2vh 2rem;
     text-align: justify; }
-    .content .text__content p {
+    .content .text__content .text__content--div {
       display: inline-block;
       margin: 0.5rem; }
 
@@ -383,9 +383,9 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
-  color: black; }
+  color: #7F7F7F; }
 
-.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content p {
+.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content .text__content--div {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -481,9 +481,9 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
-  color: black; }
+  color: #7F7F7F; }
 
-.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content p {
+.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content .text__content--div {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;

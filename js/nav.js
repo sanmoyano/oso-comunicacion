@@ -33,13 +33,13 @@ let servicio1 = new Servicio("Asesoría Digital", "¿Tenés un empredimiento y n
 
 let servicio2 = new Servicio("Social Media Management", "Tenés que estar en las redes", "Este servicio consiste en la <strong>creación y gestión de las redes sociales de tu negocio.</strong>", "<ul><li>Estrategia digital y calendario de publicación.</li><li>Community management</li><li>Diseño gráfico</li><li>Pauta publicitaria</li><li>Reportes de rendimiento</li></ul>")
 
-let servicio3 = new Servicio("E-mail Marketing", "Realizamos la gestión integral de campañas de e-mail marketing y newsletters.", "El servicio consiste en el alta en una plataforma (o actualización de la existente), gestión de campañas, seguimiento y reportes.", "Pack mínimo > 1 envío mensual, 1 reenvío, seguimiento y reporte.")
+let servicio3 = new Servicio("E-mail Marketing", "Realizamos la <strong>gestión integral de campañas de e-mail marketing y newsletters.</strong>", "El servicio consiste en el alta en una plataforma (o actualización de la existente), gestión de campañas, seguimiento y reportes.", "Pack mínimo > 1 envío mensual, 1 reenvío, seguimiento y reporte.")
 
-let servicio4 = new Servicio("Publicidad Online", "Gestión integral de pauta publicitaria en Facebook Ads y Google Ads.", "Incluye seguimiento de métricas y reportes.", " ")
+let servicio4 = new Servicio("Publicidad Online", "Gestión integral de pauta publicitaria en <strong>Facebook Ads y Google Ads.</strong>", "Incluye seguimiento de métricas y reportes.", " ")
 
-let servicio5 = new Servicio("SEO", "Te hacemos visible con un plan básico de optimización SEO a un sitio web.", "A través de estrategias y técnicas de posicionamiento SEO, te ayudamos a aumentar las visitas a tu sitio web y a posicionarte en los resultados orgánicos de búsqueda.", "¿Cómo trabajamos? Diagnóstico inicial > Planificación y ejecución de la estrategia SEO > Seguimiento > Reporte.")
+let servicio5 = new Servicio("SEO", "Te hacemos visible con un <strong>plan básico de optimización SEO a un sitio web.</strong>", "A través de estrategias y técnicas de posicionamiento SEO, te ayudamos a aumentar las visitas a tu sitio web y a posicionarte en los resultados orgánicos de búsqueda.", "¿Cómo trabajamos? Diagnóstico inicial > Planificación y ejecución de la estrategia SEO > Seguimiento > Reporte.")
 
-let servicio6 = new Servicio("Fotografía y video", "Fotografía de producto, gastronómica y artística.Books grupales e individuales. Reels para redes sociales. Videos institucionales. Videoclips.", "Disponible > consultá para sumar un locutor o locutora con calidad de estudio a tus videos institucionales.", " ")
+let servicio6 = new Servicio("Fotografía y video", "<ul><li>Fotografía de producto, gastronómica y artística</li><li>Books grupales e individuales</li><li> Reels para redes sociales</li><li> Videos institucionales</li><li> Videoclips</li></ul>", "Disponible > consultá para sumar un locutor o locutora con calidad de estudio a tus videos institucionales.", " ")
 
 let servicio7 = new Servicio("Campañas de comunicación","Planificación y ejecución de una campaña de comunicación integral. Se puede elegir para: lanzamientos, posicionamientos, promociones y/o ventas.", "Contempla la estrategia creativa, el plan de marketing, la creación de material audiovisual, la publicidad y el análisis de rendimiento. Es decir, contempla todo." , "Dejalo en nuestras manos. Armamos un pack a medida acorde a las necesidades que tenga tu negocio." )
 
@@ -68,6 +68,8 @@ servicios.forEach((servicios, indice) => {
         let visible = containerModal.getAttribute('data-visible')
         if (visible === "false") {
             containerModal.setAttribute('data-visible', true)
+        } else {
+            containerModal.setAttribute('data-visible', false)
         }
         containerModal.innerHTML = " " 
         containerModal.innerHTML += `
@@ -77,9 +79,9 @@ servicios.forEach((servicios, indice) => {
             </div>
             <div class="content">
                 <div class="text__content">
-                    <p><strong>${servicios.parrafo}</strong></p>
-                    <p>${servicios.parrafoUno}</p>
-                    <p>${servicios.parrafoDos}</p>
+                    <div class="text__content--div">${servicios.parrafo}</div>
+                    <div class="text__content--div">${servicios.parrafoUno}</div>
+                    <div class="text__content--div">${servicios.parrafoDos}</div>
                 </div>
             </div>
             `
