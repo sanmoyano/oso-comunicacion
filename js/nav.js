@@ -123,9 +123,9 @@ consultas.forEach((consultas, indice) => {
 
 let consultModal = document.querySelector('.consult__container')
 
-consultas.forEach((consultas, indice) => {
+consultas.forEach((consulta, indice) => {
     let modalConsultas = document.querySelector(`#consultas-modal${indice + 1}`)
-    console.log(modalConsultas)
+    modalConsultas.addEventListener('Click', () => {console.log("hice click")})
     // modalConsultas.addEventListener('Click', () => {
     //     console.log("Hace click")
     //     let visible = modalConsultas.getAttribute('data-visble')
