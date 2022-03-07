@@ -105,7 +105,7 @@ class Consulta {
     }
 }
 
-let consultaUno = new Consulta ("Consultoria en comunicación con perspectiva de género", "Tomá postura", "¿En que consiste?", ">  Auditoría inicial para evaluar la comunicación actual de tu negocio y un plan para <strong>comenzar a comunicar de forma responsable, igualitaria e inclusiva.</strong>")
+let consultaUno = new Consulta ("Consultoria en comunicación con perspectiva de género", "¿En que consiste?", " ", "Toma postura", "> Auditoría inicial para evaluar la comunicación actual de tu negocio y un plan para <strong>comenzar a comunicar de forma responsable, igualitaria e inclusiva.</strong>")
 let consultaDos = new Consulta ("Triple impacto en mi negocio", "En Oso tenemos la convicción de que <strong>cualquier negocio, marca o emprendimiento puede ser pensado desde la sustentabilidad y el compromiso social y ambiental.</strong>", "¿En qué consiste?", ">  Auditoría inicial para conocer el negocio y un plan de acción real y concreto para sumar acciones de responsabilidad social.", ">  Campaña de comunicación para difundir las acciones.")
 
 let consultas = [consultaUno, consultaDos]
