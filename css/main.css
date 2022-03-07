@@ -187,20 +187,31 @@ html {
           .hero-section-container .hero-section .hero-section-content .content--modifier h1 {
             font-size: 6.8rem;
             line-height: 70px; } }
-    @media screen and (min-width: 860px) {
-      .hero-section-container .hero-section .hero-section-content {
-        width: 30vw; } }
+      .hero-section-container .hero-section .hero-section-content .content--modifier p {
+        width: 80vw; }
+        @media screen and (min-width: 860px) {
+          .hero-section-container .hero-section .hero-section-content .content--modifier p {
+            width: 22vw; } }
+      @media screen and (min-width: 860px) {
+        .hero-section-container .hero-section .hero-section-content .content--modifier {
+          width: 50vw; } }
     .hero-section-container .hero-section .hero-section-content .hero-section-img {
       width: 300px;
       padding: 2.4rem; }
       @media screen and (min-width: 860px) {
         .hero-section-container .hero-section .hero-section-content .hero-section-img {
-          width: 450px; } }
+          width: 500px; } }
+    @media screen and (min-width: 860px) {
+      .hero-section-container .hero-section .hero-section-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; } }
   .hero-section-container .hero-section .main-quienes {
     display: flex;
     height: 90vh;
     margin: 1rem;
     align-items: center;
+    justify-content: center;
     background-image: url(../../../img/fondo-oso.svg);
     background-repeat: no-repeat;
     background-position: center; }
@@ -211,9 +222,12 @@ html {
       .hero-section-container .hero-section .main-quienes .quienes-content p {
         text-align: start;
         padding: 1rem; }
-  @media screen and (min-width: 860px) {
-    .hero-section-container .hero-section {
-      flex-direction: row; } }
+        @media screen and (min-width: 860px) {
+          .hero-section-container .hero-section .main-quienes .quienes-content p {
+            width: 20vw; } }
+    @media screen and (min-width: 860px) {
+      .hero-section-container .hero-section .main-quienes {
+        width: 40vw; } }
 
 .hero-section-container .polka__dots--gray::before {
   content: "";
@@ -225,15 +239,35 @@ html {
   background-size: 30px 30px;
   width: 100px;
   height: 100%; }
+  @media screen and (min-width: 860px) {
+    .hero-section-container .polka__dots--gray::before {
+      height: 200%; } }
 
 .card__container-servicios {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1800px;
   flex-wrap: wrap;
   z-index: 1; }
+  @media screen and (min-width: 860px) {
+    .card__container-servicios {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: "h2 div div div" "div div div div";
+      flex-wrap: nowrap; } }
+  .card__container-servicios .container__head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; }
+    .card__container-servicios .container__head img {
+      width: 100px; }
+      @media screen and (max-width: 651px) {
+        .card__container-servicios .container__head img {
+          display: none; } }
   .card__container-servicios .card__servicios {
     position: relative;
     width: 280px;
@@ -289,7 +323,7 @@ html {
   font-weight: 500;
   color: #ffd104; }
 
-.modal__primary .button-close h3 {
+.button-close h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -315,7 +349,7 @@ html {
   font-weight: 400;
   color: white; }
 
-.modal__primary .modal__primary--content {
+.modal__primary--content {
   display: flex;
   --gap: 4em;
   list-style: none;
@@ -332,23 +366,23 @@ html {
   transform: translateY(100%);
   transition: transform 350ms ease-in; }
 
-.modal__primary .background-pastillas {
+.background-pastillas {
   background-image: url(../../../img/pastillitas-oso.svg);
   background-position: top;
   background-size: 15%;
   background-repeat: repeat-x; }
 
-.modal__primary .modal__primary--content[data-visible="true"] {
+.modal__primary--content[data-visible="true"] {
   transform: translateY(0%); }
 
-.modal__primary .button-close {
+.button-close {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 2rem; }
-  .modal__primary .button-close h3 {
+  .button-close h3 {
     margin-left: 3rem; }
-  .modal__primary .button-close .btn__close {
+  .button-close .btn__close {
     background-color: unset;
     background-image: url(../../../icons/x_oso_lila.svg);
     background-repeat: no-repeat;
@@ -385,7 +419,7 @@ html {
   font-weight: 500;
   color: #ffd104; }
 
-.modal__primary .button-close h3 {
+.button-close h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -477,8 +511,13 @@ html {
   margin: 2.4rem;
   background-image: radial-gradient(#ffd104 5px, transparent 1px);
   background-size: 30px 30px;
-  width: 100px;
+  width: 90px;
   height: 100%; }
+  @media screen and (min-width: 860px) {
+    .polka__dots::before {
+      width: 95vw;
+      height: 120px;
+      background-size: 30px 30px; } }
 
 .consult .consult__head h2, .consult .consult__cards .consult__cards--content span {
   font-family: "Montserrat", sans-serif;
@@ -499,7 +538,7 @@ html {
   font-weight: 500;
   color: #ffd104; }
 
-.modal__primary .button-close h3 {
+.button-close h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;

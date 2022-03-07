@@ -2,13 +2,33 @@
 .card__container-servicios {
     position: relative;
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1800px;
     flex-wrap: wrap;
     z-index: 1;
+    @include desktop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "h2 div div div"
+        "div div div div";
+        flex-wrap: nowrap;
+    }
 
+    .container__head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        img {
+            width: 100px;
+            @include mobil {
+                display: none;
+            }
+        }
+    }
 
     .card__servicios {
         position: relative;

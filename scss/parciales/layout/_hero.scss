@@ -1,12 +1,11 @@
 .hero-section-container {
-	// background-color: white;
 	.hero-section {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
 		margin-top: 12.4rem;
-	
+
 		.hero-section-content {
 			display: inline-block;
 			margin: 1rem;
@@ -25,26 +24,36 @@
 						line-height: 70px;
 					}
 				}
-		
+
 				div {
 					@extend %titulo-dos-oso;
 				}
-		
+
 				p {
 					@extend %body-oso;
+					width: 80vw;
+					@include desktop {
+						width: 22vw;
+					}
 				}
-			}
-	
-			@include desktop {
-				width: 30vw;
+
+				@include desktop {
+					width: 50vw;
+				}
 			}
 
 			.hero-section-img {
 				width: 300px;
 				padding: 2.4rem;
 				@include desktop {
-					width: 450px;
+					width: 500px;
 				}
+			}
+
+			@include desktop {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
 			}
 		}
 
@@ -53,31 +62,33 @@
 			height: 90vh;
 			margin: 1rem;
 			align-items: center;
+			justify-content: center;
 			// margin-inline: 2rem;
 			background-image: url(../../../img/fondo-oso.svg);
 			background-repeat: no-repeat;
 			background-position: center;
-		
+
 			.quienes-content {
 				display: inline;
 				text-align: center;
 				padding: 4rem;
 				h2 {
-					@extend %titulo-dos-oso; 
+					@extend %titulo-dos-oso;
 				}
-			
+
 				p {
-					text-align: start;  
-					padding: 1rem; 
+					text-align: start;
+					padding: 1rem;
 					@extend %body-oso-white;
+					@include desktop {
+						width: 20vw;
+					}
 				}
 			}
-		
-		}
-	
-		//MEDIA QUARYS
-		@include desktop {
-			flex-direction: row;
+
+			@include desktop {
+				width: 40vw;
+			}
 		}
 	}
 
@@ -91,5 +102,8 @@
 		background-size: 30px 30px;
 		width: 100px;
 		height: 100%;
+		@include desktop {
+			height: 200%;
+		}
 	}
 }

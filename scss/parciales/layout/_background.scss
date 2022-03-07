@@ -33,7 +33,11 @@
 	margin: 2.4rem;
 	background-image: radial-gradient(#ffd104 5px, transparent 1px);
 	background-size: 30px 30px;
-	width: 100px;
+	width: 90px;
 	height: 100%;
+	@include desktop {
+		width: 95vw;
+		height: 120px;
+		background-size: 30px 30px;
+	}
 }
-
