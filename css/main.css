@@ -44,8 +44,6 @@ html {
   height: auto;
   display: flex;
   z-index: 1000;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
   box-shadow: 0px 4px 4px rgba(127, 127, 127, 0.2); }
   .primary-header .logo-container-desktop {
     width: 15rem;
@@ -303,6 +301,11 @@ html {
         font-weight: 400;
         font-size: 1.6rem;
         color: white; }
+
+@media screen and (min-width: 860px) {
+  .card__servicios:hover {
+    transition: 700ms;
+    transform: scale(1.075); } }
 
 .consult .consult__head h2, .consult .consult__cards .consult__cards--content span {
   font-family: "Montserrat", sans-serif;
