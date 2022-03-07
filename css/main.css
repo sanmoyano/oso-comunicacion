@@ -281,7 +281,8 @@ html {
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.8);
     border-left: 1px solid rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px); }
+    backdrop-filter: blur(5px);
+    transition: all 500ms ease-in-out; }
     .card__container-servicios .card__servicios .card__servicios-content {
       padding: 2rem;
       text-align: center;
@@ -304,7 +305,6 @@ html {
 
 @media screen and (min-width: 860px) {
   .card__servicios:hover {
-    transition: 700ms;
     transform: scale(1.075); } }
 
 .consult .consult__head h2, .consult .consult__cards .consult__cards--content span {
