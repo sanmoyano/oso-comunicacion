@@ -4,7 +4,12 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "header" "div" "main" "footer"; }
+  grid-template-areas: "header"
+ "div"
+ "main"
+ "consultoria"
+ "formulario"
+ "footer"; }
   .body-grid-container header {
     grid-area: header; }
   .body-grid-container main {
@@ -12,7 +17,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "section" "section"; }
+    grid-template-areas: "section"
+ "section"; }
   .body-grid-container footer {
     grid-area: footer; }
 
@@ -255,7 +261,8 @@ html {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, auto);
-      grid-template-areas: "h2 div div div" "div div div div";
+      grid-template-areas: "h2 div div div"
+ "div div div div";
       flex-wrap: nowrap;
       padding: 8rem; } }
   .card__container-servicios .container__head {
