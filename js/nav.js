@@ -157,4 +157,3 @@ consultas.forEach((consultas, indice) => {
     })
 })
 
-
