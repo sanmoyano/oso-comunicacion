@@ -14,6 +14,13 @@
 
     main {
         grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "section"
+        "section"
+        ;
     }
 
     footer {
@@ -21,6 +28,11 @@
     }
 }
 
-.card-grid-container {
+.card__grid-container {
+    h2 { 
+        @extend %titulo-section-oso; 
+        padding: 2.4rem;
+        margin: auto;
+    }
     display: grid;
 }

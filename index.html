@@ -10,6 +10,9 @@
     <meta name="descripcion" content="#">
     <meta name="keywords" content="#">
 
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
     <!-- icono web -->
     <link rel="shortcut icon" href="./icons/isologo_oso_v1.svg" type="image/x-icon">
     <title>Oso Comunicación</title>
@@ -19,8 +22,6 @@
 </head>
 
 <body class="body-grid-container">
-
-    <!-- COMIENZO HEADER -->
     <header class="primary-header flex" aria-expanded="false">
         <div class="logo-container">
             <div class="logo-container-mobil">
@@ -39,48 +40,44 @@
         </button>
 
         <nav class="nav">
-            <ul id="primary-nav" data-visible="false" class="primary-nav underline-indicators flex">
+            <ul id="primary-nav" data-visible="false" class="primary-nav flex">
                 <h1>Menu</h1>
-                <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2"
-                        href="./pages/01quienes.html"><span aria-hidden="true"><img class="iconos-navbar"
+                <li class="active"><a href="#quienes__id"><span aria-hidden="true"><img class="iconos-navbar"
                                 src="./icons/estrella_oso_amarillo.svg" alt="quienes somos?"></span>¿Quienes somos?</a>
                 </li>
-                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./pages/02servicios.html"><span
-                            aria-hidden="true"><img class="iconos-navbar" src="./icons/blanco_oso_amarillo.svg"
-                                alt="quienes somos?"></span>Servicios</a></li>
-                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2"
-                        href="./pages/03consultoria.html"><span aria-hidden="true"><img class="iconos-navbar"
+                <li><a href="#servicios__id"><span aria-hidden="true"><img class="iconos-navbar"
+                                src="./icons/blanco_oso_amarillo.svg" alt="quienes somos?"></span>Servicios</a></li>
+                <li><a href="#consultas__id"><span aria-hidden="true"><img class="iconos-navbar"
                                 src="./icons/lupa_oso_amarillo.svg" alt="quienes somos?"></span>Consultorías</a></li>
-                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./pages/04.contacto.html"><span
-                            aria-hidden="true"><img class="iconos-navbar" src="./icons/chat_oso_amarillo.svg"
-                                alt="quienes somos?"></span>Contacto</a></li>
+                <li><a href=" "><span aria-hidden="true"><img class="iconos-navbar"
+                                src="./icons/chat_oso_amarillo.svg" alt="quienes somos?"></span>Contacto</a></li>
                 <div class="primary-nav-redes">
                     <a href="https://www.instagram.com/oso.comunicacion/?hl=es"><img src="./icons/instagram-brands.svg"
-                            alt="instagram"></a>
-                    <a href="https://www.instagram.com/oso.comunicacion/?hl=es"><img src="./icons/facebook-f-brand.svg"
-                            alt="facebook"></a>
-                    <a href=""><img src="./icons/linkedin-in-brands.svg" alt="Linkedin"></a>
+                            alt="Instagram"></a>
+                    <a href="https://www.facebook.com/comunicacionoso/"><img src="./icons/facebook-f-brand.svg"
+                            alt="Facebook"></a>
+                    <a href="https://www.linkedin.com/company/65675740/admin/"><img src="./icons/linkedin-in-brands.svg"
+                            alt="Linkedin"></a>
                 </div>
             </ul>
         </nav>
     </header>
-    <!-- FIN HEADER -->
 
-    <!-- COMIENZO HERO SECTION  -->
     <div class="hero-section-container">
-        <section class="hero-section">
+        <section class="hero-section polka__dots--gray">
             <div class="hero-section-content">
-                <h1>impulsamos <br> tus ideas</h1>
-                <div>>>>>>>>>>>>>>>></div>
-                <p>Un equipo de freelancers que se ponen la camiseta de tu negocio. Hacemos creatividad estratégica
-                    enfocada
-                    en lograr lo que querés.</p>
-            </div>
-            <div class="hero-section-img">
-                <img src="./img/img-oso.svg" alt="">
+                <div class="content--modifier">
+                    <h1>impulsamos <br> tus ideas</h1>
+                    <div>>>>>>>>>>>>>>>></div>
+                    <p>Un equipo de freelancers que se ponen la camiseta de tu negocio. Hacemos creatividad estratégica
+                        enfocada en lograr lo que querés.</p>
+                </div>
+                <div class="hero-section-img">
+                    <img src="./img/img-oso.svg" alt="">
+                </div>
             </div>
             <!-- quienes somos -->
-            <div class="main-quienes">
+            <div id="quienes__id" class="main-quienes">
                 <div class="quienes-content">
                     <h2>¿Quienes somos?</h2>
                     <p>Oso Comunicación es una agencia de comunicación integral, especializada en <strong>social media,
@@ -90,55 +87,48 @@
             </div>
         </section>
     </div>
-    <!-- FIN HERO SECTION -->
 
-    <!-- COMIENZO MAIN -->
-    <main class="main">
+    <main>
         <!-- card section  -->
-        <section class="card-grid-container polka-dots">
-            <div class="container-card-servicios">
-                <h2>Servicios</h2>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/foco_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>Asesoría digital</h2>
-                    </div>
+        <section id="servicios__id" class="card__grid-container card-gradient">
+            <div class="top-wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <!-- card visibles -->
+            <div id="card__container" class="card__container-servicios polka__dots">
+                <div class="container__head">
+                    <h2>Servicios</h2>
+                    <img src="./icons/blanco_oso_amarillo.svg" alt="">
                 </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/celu_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>Social Media Management</h2>
-                    </div>
-                </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/pc_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>E-mail marketing</h2>
-                    </div>
-                </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/altavoz_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>Publicidad Online</h2>
-                    </div>
-                </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/cohete_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>SEO</h2>
-                    </div>
-                </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/camara_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>Fotografía y video</h2>
-                    </div>
-                </div>
-                <div class="card-servicios">
-                    <div class="card-servicios-content">
-                        <img src="./icons/pantallas_oso_amarillo.svg" alt="asesoría digital">
-                        <h2>Campañas de comunicación</h2>
-                    </div>
+                <!-- modal popUp -->
+                <div class="modal__primary--content background-pastillas" data-visible="false"></div>
+            </div>
+            <div class="bottom-wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- consultorías -->
+        <section id="consultas__id" class="consult">
+            <div class="consult__head">
+                <img src="./icons/lupa_oso_amarillo.svg" alt="consultorías">
+                <h2>Consultoría</h2>
+            </div>
+            <!-- card consultas -->
+            <div id="consult__cards--container" class="consult__cards">
+                <!-- modal consultas  -->
+                <div class="modal__consult">
+                    <div class="modal__primary--content background-pastillas" data-visible="false"></div>
                 </div>
             </div>
         </section>
@@ -210,7 +200,6 @@
             <button onclick="mensaje()" class="boton_wwp-container"></button>
         </div>
     </footer>
-    <!-- FIN FOOTER -->
 
     <!-- SCRIPS -->
     <!-- osos scrip  -->

@@ -1,18 +1,38 @@
-.container-card-servicios {
+
+.card__container-servicios {
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1800px;
     flex-wrap: wrap;
     z-index: 1;
-    h2 { 
-        @extend %titulo-section-oso; 
-        padding: 2.4rem;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "h2 div div div"
+        "div div div div";
+        flex-wrap: nowrap;
+        padding: 8rem;
     }
 
-    .card-servicios {
+    .container__head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        img {
+            width: 100px;
+            @include mobil {
+                display: none;
+            }
+        }
+    }
+
+    .card__servicios {
         position: relative;
         width: 280px;
         height: 350px;
@@ -28,8 +48,9 @@
         border-top: $borde;
         border-left: $borde;
         backdrop-filter: blur(5px);
+        transition: all 500ms ease-in-out;
 
-        .card-servicios-content {
+        .card__servicios-content {
             padding: 2rem;
             text-align: center;
             transition: 0.5s;
@@ -57,3 +78,8 @@
     }
 }
 
+@include desktop {
+    .card__servicios:hover {
+        transform: scale(1.075);
+    }
+}

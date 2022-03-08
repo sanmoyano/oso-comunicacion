@@ -1,0 +1,73 @@
+@import "../utilities/variables";
+@import "../components/extend";
+
+.consult {
+    background-image: url(../../../img/manchas-oso.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 370px;
+	margin: 1.2rem;
+	.consult__head {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+		img {
+			width: 110px;
+			margin: auto;
+		}
+		h2 {
+			@extend %titulo-uno-oso;
+            padding: 2rem;
+		}
+	}
+	.consult__cards {
+		display: block;
+        padding: 1rem;
+		.consult__cards--content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+			background: white;
+            box-shadow: 0px 4px 4px rgba($gris-oscuro-oso, $alpha: 0.2);
+            border-radius: 8px;
+            h3 {
+                padding: 2rem;
+                @extend %body-oso-card;
+            }
+            span {
+                @extend %titulo-uno-oso;
+                padding-right: 1rem;
+            }
+		}
+	}
+}
+
+.modal__card--consult {
+    display: flex;
+    --gap: 4em;
+    list-style: none;
+    position: fixed;
+    inset: 40% 0 0 0;
+    z-index: 1000;
+	background: linear-gradient(
+		120deg,
+		$lila-oso,
+		$degrade2,
+		$degrade3,
+		$degrade4,
+		$celeste-oso,
+		$degrade4,
+		$degrade3,
+		$degrade2,
+		$lila-oso
+	);
+    filter: drop-shadow(0px 4px 4px $gris-oscuro-oso);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    flex-direction: column;
+    padding: min(20vh, 5vh) 1rem;
+    padding-right: 2.4rem;
+    transform: translateY(100%);
+    transition: transform 350ms ease-in;
+}

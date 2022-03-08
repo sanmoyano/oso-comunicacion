@@ -9,6 +9,8 @@
 @import"./parciales/layout/navbar"; //barra de navegacion
 @import"./parciales/layout/hero"; //hero section
 @import"./parciales/layout/cards"; //cards servicios
+@import"./parciales/layout/modal"; //modal cards
+@import "./parciales/layout/consultoria"; //consultorias
 @import"./parciales/layout/background"; //color backgroud
 
 
@@ -16,6 +18,7 @@
 
 // COMPONENTS
 @import"./parciales/components/extend";
+@import "./parciales/components/svg";
 
 // BASE 
 @import "./parciales/base/reset"; //reset del html 
