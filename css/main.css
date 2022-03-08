@@ -28,7 +28,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 .flex {
   display: flex;
@@ -255,7 +256,8 @@ html {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, auto);
       grid-template-areas: "h2 div div div" "div div div div";
-      flex-wrap: nowrap; } }
+      flex-wrap: nowrap;
+      padding: 8rem; } }
   .card__container-servicios .container__head {
     display: flex;
     align-items: center;
@@ -518,7 +520,7 @@ html {
   height: 100%; }
   @media screen and (min-width: 860px) {
     .polka__dots::before {
-      width: 95vw;
+      width: 97%;
       height: 120px;
       background-size: 30px 30px; } }
 
@@ -617,4 +619,5 @@ html {
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
