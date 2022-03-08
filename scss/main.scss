@@ -3,9 +3,14 @@
 @import "./parciales/utilities/_mixins.scss"; //media query
 
 // GRIDS
+@import"./parciales/layout/grids"; //grids
 
 // LAYOUT
 @import"./parciales/layout/navbar"; //barra de navegacion
+@import"./parciales/layout/hero"; //hero section
+@import"./parciales/layout/cards"; //cards servicios
+@import"./parciales/layout/background"; //color backgroud
+
 
 // PAGES
 
