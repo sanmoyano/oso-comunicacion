@@ -41,7 +41,7 @@ let servicio5 = new Servicio("SEO", "Te hacemos visible con un <strong>plan bás
 
 let servicio6 = new Servicio("Fotografía y video", "<ul><li>Fotografía de producto, gastronómica y artística</li><li>Books grupales e individuales</li><li> Reels para redes sociales</li><li> Videos institucionales</li><li> Videoclips</li></ul>", "Disponible > consultá para sumar un locutor o locutora con calidad de estudio a tus videos institucionales.", " ")
 
-let servicio7 = new Servicio("Campañas de comunicación","Planificación y ejecución de una campaña de comunicación integral. Se puede elegir para: lanzamientos, posicionamientos, promociones y/o ventas.", "Contempla la estrategia creativa, el plan de marketing, la creación de material audiovisual, la publicidad y el análisis de rendimiento. Es decir, contempla todo." , "Dejalo en nuestras manos. Armamos un pack a medida acorde a las necesidades que tenga tu negocio." )
+let servicio7 = new Servicio("Campañas de comunicación", "Planificación y ejecución de una campaña de comunicación integral. Se puede elegir para: lanzamientos, posicionamientos, promociones y/o ventas.", "Contempla la estrategia creativa, el plan de marketing, la creación de material audiovisual, la publicidad y el análisis de rendimiento. Es decir, contempla todo.", "Dejalo en nuestras manos. Armamos un pack a medida acorde a las necesidades que tenga tu negocio.")
 
 let servicios = [servicio1, servicio2, servicio3, servicio4, servicio5, servicio6, servicio7]
 let divCardContainer = document.querySelector('#card__container')
@@ -70,7 +70,7 @@ servicios.forEach((servicios, indice) => {
         } else {
             containerModal.setAttribute('data-visible', false)
         }
-        containerModal.innerHTML = " " 
+        containerModal.innerHTML = " "
         containerModal.innerHTML += `
             <div class="button-close">
                 <h3>${servicios.nombre}</h3>
@@ -84,16 +84,50 @@ servicios.forEach((servicios, indice) => {
                 </div>
             </div>
             `
-            let closeBtn = document.querySelector(`#modal__btn--close${indice + 1}`)
-            closeBtn.addEventListener('click', () => {
-                containerModal.setAttribute('data-visible', false)
-            })
+        let closeBtn = document.querySelector(`#modal__btn--close${indice + 1}`)
+        closeBtn.addEventListener('click', () => {
+            containerModal.setAttribute('data-visible', false)
+        })
     })
-    
+
+})
+
+// MODAL DESKTOP SERVICIOS
+let modalDesketop = document.querySelector('.modal__container--desktop')
+
+servicios.forEach((servicios, indice) => {
+    let cardServicios = document.querySelector(`#card__inner${indice + 1}`)
+    console.log(cardServicios)
+    cardServicios.addEventListener('click', () => {
+        let visible = modalDesketop.getAttribute('data-visible')
+        if (visible === "false") {
+            modalDesketop.setAttribute('data-visible', true)
+        } else {
+            modalDesketop.setAttribute('data-visible', false)
+        }
+        modalDesketop.innerHTML = " "
+        modalDesketop.innerHTML += `
+            <div class="modal__desktop">
+                <h3>${servicios.nombre}</h3>
+                <button id="modal__btn--close${indice + 1}" class="btn__close"></button>
+            </div>
+            <div class="content">
+                <div class="text__content">
+                    <div class="text__content--div">${servicios.parrafo}</div>
+                    <div class="text__content--div">${servicios.parrafoUno}</div>
+                    <div class="text__content--div">${servicios.parrafoDos}</div>
+                </div>
+            </div>
+            `
+        let closeBtn = document.querySelector(`#modal__btn--close${indice + 1}`)
+        closeBtn.addEventListener('click', () => {
+            modalDesketop.setAttribute('data-visible', false)
+        })
+    })
 })
 
 
-/*<======= MODAL SERVICIOS =======>*/
+/*<======= MODAL CONSULTAS =======>*/
 
 class Consulta {
     constructor(taller, descrip, descripUno, descripDos, descripTres) {
@@ -113,20 +147,19 @@ let consultasCardContainer = document.querySelector('#consult__cards--container'
 
 consultas.forEach((consultas, indice) => {
     consultasCardContainer.innerHTML += `
-    <div id="consultas-modal${indice + 1}" class="consult__cards">
-        <div id="card__inner--consult${indice + 1}" class="consult__cards--content">
-            <h3>${consultas.taller}</h3>
-            <span>>></span>
-        </div>
-    </div>
-    `
+            < div id = "consultas-modal${indice + 1}" class="consult__cards" >
+                <div id="card__inner--consult${indice + 1}" class="consult__cards--content">
+                    <h3>${consultas.taller}</h3>
+                    <span>>></span>
+                </div>
+    </ >
+            `
 })
 
 /*<======= MODAL CONSULTAS =======>*/
 
 consultas.forEach((consultas, indice) => {
-    let btnModalConsultas = document.querySelector(`#card__inner--consult${indice + 1}`)
-    console.log(btnModalConsultas)
+    let btnModalConsultas = document.querySelector(`#card__inner--consult${ indice + 1 } `)
     btnModalConsultas.addEventListener('click', () => {
         let visible = containerModal.getAttribute('data-visible')
         if (visible === "false") {
@@ -137,20 +170,20 @@ consultas.forEach((consultas, indice) => {
 
         containerModal.innerHTML = " "
         containerModal.innerHTML += `
-        <div class="button-close">
+            < div class="button-close" >
             <h3>${consultas.taller}</h3>
             <button id="modal__btn--close${indice + 1}" class="btn__close"></button>
-        </div>
-        <div class="content">
-            <div class="text__content">
-                <div class="text__content--div">${consultas.descrip}</div>
-                <div class="text__content--div">${consultas.descripUno}</div>
-                <div class="text__content--div">${consultas.descripDos}</div>
-                <div class="text__content--div">${consultas.descripTres}</div>
+        </ >
+            <div class="content">
+                <div class="text__content">
+                    <div class="text__content--div">${consultas.descrip}</div>
+                    <div class="text__content--div">${consultas.descripUno}</div>
+                    <div class="text__content--div">${consultas.descripDos}</div>
+                    <div class="text__content--div">${consultas.descripTres}</div>
+                </div>
             </div>
-        </div>
         `
-        let closeBtn = document.querySelector(`#modal__btn--close${indice + 1}`)
+        let closeBtn = document.querySelector(`#modal__btn--close${ indice + 1 } `)
         closeBtn.addEventListener('click', () => {
             containerModal.setAttribute('data-visible', false)
         })

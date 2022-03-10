@@ -234,14 +234,15 @@ html {
   position: absolute;
   z-index: -1;
   left: 0px;
-  margin: 2.4rem;
+  margin: auto;
   background-image: radial-gradient(#CECECE 5px, transparent 1px);
   background-size: 30px 30px;
   width: 100px;
   height: 100%; }
   @media screen and (min-width: 860px) {
     .hero-section-container .polka__dots--gray::before {
-      height: 200%; } }
+      height: 200%;
+      width: 120px; } }
 
 .card__container-servicios {
   position: relative;
@@ -357,6 +358,7 @@ html {
 
 .modal__primary--content {
   display: flex;
+  flex-direction: column;
   --gap: 4em;
   list-style: none;
   position: fixed;
@@ -366,11 +368,13 @@ html {
   filter: drop-shadow(0px 4px 4px #7F7F7F);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  flex-direction: column;
   padding: 5vh 1rem;
   padding-right: 2.4rem;
   transform: translateY(100%);
   transition: transform 350ms ease-in; }
+  @media screen and (min-width: 860px) {
+    .modal__primary--content {
+      display: none; } }
 
 .background-pastillas {
   background-image: url(../../../img/pastillitas-oso.svg);
@@ -383,9 +387,13 @@ html {
 
 .button-close {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 2rem; }
+  @media screen and (min-width: 860px) {
+    .button-close {
+      flex-direction: column; } }
   .button-close h3 {
     margin-left: 3rem; }
   .button-close .btn__close {
@@ -405,6 +413,28 @@ html {
     .content .text__content .text__content--div {
       display: inline-block;
       margin: 0.5rem; }
+
+.modal__container--desktop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3); }
+  @media screen and (max-width: 651px) {
+    .modal__container--desktop {
+      display: none; } }
+
+.modal__desktop {
+  background-color: white;
+  width: 600px;
+  max-width: 100%;
+  padding: 2.4rem;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px #7F7F7F; }
 
 .consult .consult__head h2, .consult .consult__cards .consult__cards--content span {
   font-family: "Montserrat", sans-serif;
@@ -500,7 +530,7 @@ html {
   transition: transform 350ms ease-in; }
 
 @media screen and (min-width: 860px) {
-  #consultas__id {
+  .consult {
     display: none; } }
 
 .card-gradient {
@@ -518,14 +548,14 @@ html {
   content: "";
   position: absolute;
   left: 0px;
-  margin: 2.4rem;
+  margin: auto;
   background-image: radial-gradient(#ffd104 5px, transparent 1px);
   background-size: 30px 30px;
   width: 90px;
   height: 100%; }
   @media screen and (min-width: 860px) {
     .polka__dots::before {
-      width: 97%;
+      width: 100%;
       height: 120px;
       background-size: 30px 30px; } }
 
@@ -870,6 +900,21 @@ footer .contact img {
     justify-content: flex-start;
     flex-direction: row-reverse;
     align-items: flex-end; } }
+
+.consultoria::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0px;
+  margin: auto;
+  background-image: radial-gradient(#CECECE 5px, transparent 1px);
+  background-size: 30px 30px;
+  width: 100px;
+  height: 100%; }
+  @media screen and (min-width: 860px) {
+    .consultoria::after {
+      height: 200%;
+      width: 120px; } }
 
 .consult .consult__head h2, .consult .consult__cards .consult__cards--content span {
   font-family: "Montserrat", sans-serif;

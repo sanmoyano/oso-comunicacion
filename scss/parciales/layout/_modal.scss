@@ -3,6 +3,7 @@
 
 .modal__primary--content {
 	display: flex;
+	flex-direction: column;
 	--gap: 4em;
 	list-style: none;
 	position: fixed;
@@ -12,11 +13,13 @@
 	filter: drop-shadow(0px 4px 4px $gris-oscuro-oso);
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
-	flex-direction: column;
 	padding: min(20vh, 5vh) 1rem;
 	padding-right: 2.4rem;
 	transform: translateY(100%);
 	transition: transform 350ms ease-in;
+	@include desktop {
+		display: none;
+	}
 }
 .background-pastillas {
 	background-image: url(../../../img/pastillitas-oso.svg);
@@ -30,9 +33,13 @@
 
 .button-close {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	padding-bottom: 2rem;
+	@include desktop {
+		flex-direction: column;
+	}
 
 	h3 {
 		@extend %headline-modal;
@@ -61,3 +68,29 @@
 		}
 	}
 }
+
+.modal__container--desktop {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0,0,0,0.3);
+	@include mobil {
+		display: none;
+	}
+}
+
+.modal__desktop {
+	background-color: white;
+	width: 600px;
+	max-width: 100%;
+	padding: 2.4rem;
+	border-radius: 16px;
+	box-shadow: 0px 4px 4px $gris-oscuro-oso;
+}
+
+

@@ -9,9 +9,9 @@
 /*Consultoria*/
 .body-grid-container-consultoria {
 	grid-area: consultoria;
-    @include mobil {
-        display: none;
-    }
+	@include mobil {
+		display: none;
+	}
 }
 .consultoria {
 	display: grid;
@@ -23,19 +23,19 @@
 	background-position-y: 21px;
 	color: #8d43f0;
 	font-size: 19px;
-    @include mobil {
-        display: none;
-    }
+	@include mobil {
+		display: none;
+	}
 }
 .consultoria .form-header {
 	grid-row: 1/2;
 	grid-column: 2/4;
 	font-family: "Montserrat", sans-serif;
-    h2 {
-        @include mobil {
-            display: none;
-        }
-    }
+	h2 {
+		@include mobil {
+			display: none;
+		}
+	}
 }
 
 .consultoria .consultoria_content {
@@ -48,9 +48,9 @@
 	font-size: 18px;
 	line-height: 21px;
 	color: #7f7f7f;
-    @include mobil {
-        display: none;
-    }
+	@include mobil {
+		display: none;
+	}
 }
 .consultoria .consultoria_content .consultoria_content-A {
 	/*  grid-row:1/7;
@@ -62,9 +62,9 @@
 	background-size: contain;
 	background-position: right top;
 	background-position-x: 15px;
-    @include mobil {
-        display: none;
-    }
+	@include mobil {
+		display: none;
+	}
 }
 .consultoria .consultoria_content .consultoria_content-A .consultoria_boton {
 	display: none;
@@ -210,9 +210,9 @@ footer .contact img {
 @media only screen and (max-width: 1000px) {
 	.imgIcons {
 		justify-self: center;
-        @include mobil {
-            display: none;
-        }
+		@include mobil {
+			display: none;
+		}
 	}
 	footer .contact {
 		grid-template-columns: repeat(5, 1fr);
@@ -260,7 +260,7 @@ footer .contact img {
 
 /*boton wpp*/
 .boton_wwp {
-    z-index: 1000;
+	z-index: 1000;
 	position: fixed;
 	bottom: 50px;
 	right: 10px;
@@ -383,5 +383,20 @@ footer .contact img {
 		justify-content: flex-start;
 		flex-direction: row-reverse;
 		align-items: flex-end;
+	}
+}
+.consultoria::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	right: 0px;
+	margin: auto;
+	background-image: radial-gradient($gris-claro-oso 5px, transparent 1px);
+	background-size: 30px 30px;
+	width: 100px;
+	height: 100%;
+	@include desktop {
+		height: 200%;
+		width: 120px;
 	}
 }
