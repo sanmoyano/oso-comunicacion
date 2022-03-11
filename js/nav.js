@@ -58,7 +58,7 @@ servicios.forEach((servicios, indice) => {
 })
 
 
-/*======= MODAL SERVICIOS =======*/
+/*======= MODAL SERVICIOS MOBIL =======*/
 let containerModal = document.querySelector('.modal__primary--content');
 
 servicios.forEach((servicios, indice) => {
@@ -92,39 +92,8 @@ servicios.forEach((servicios, indice) => {
 
 })
 
-// MODAL DESKTOP SERVICIOS
-let modalDesketop = document.querySelector('.modal__container--desktop')
+//MODAL SERVICIOS DESKTOP
 
-servicios.forEach((servicios, indice) => {
-    let cardServicios = document.querySelector(`#card__inner${indice + 1}`)
-    console.log(cardServicios)
-    cardServicios.addEventListener('click', () => {
-        let visible = modalDesketop.getAttribute('data-visible')
-        if (visible === "false") {
-            modalDesketop.setAttribute('data-visible', true)
-        } else {
-            modalDesketop.setAttribute('data-visible', false)
-        }
-        modalDesketop.innerHTML = " "
-        modalDesketop.innerHTML += `
-            <div class="modal__desktop">
-                <h3>${servicios.nombre}</h3>
-                <button id="modal__btn--close${indice + 1}" class="btn__close"></button>
-            </div>
-            <div class="content">
-                <div class="text__content">
-                    <div class="text__content--div">${servicios.parrafo}</div>
-                    <div class="text__content--div">${servicios.parrafoUno}</div>
-                    <div class="text__content--div">${servicios.parrafoDos}</div>
-                </div>
-            </div>
-            `
-        let closeBtn = document.querySelector(`#modal__btn--close${indice + 1}`)
-        closeBtn.addEventListener('click', () => {
-            modalDesketop.setAttribute('data-visible', false)
-        })
-    })
-})
 
 
 /*<======= MODAL CONSULTAS =======>*/
@@ -147,13 +116,13 @@ let consultasCardContainer = document.querySelector('#consult__cards--container'
 
 consultas.forEach((consultas, indice) => {
     consultasCardContainer.innerHTML += `
-            < div id = "consultas-modal${indice + 1}" class="consult__cards" >
-                <div id="card__inner--consult${indice + 1}" class="consult__cards--content">
-                    <h3>${consultas.taller}</h3>
-                    <span>>></span>
-                </div>
-    </ >
-            `
+        <div id = "consultas-modal${indice + 1}" class="consult__cards" >
+            <div id="card__inner--consult${indice + 1}" class="consult__cards--content">
+                <h3>${consultas.taller}</h3>
+                <span>>></span>
+            </div>
+        <div/>
+    `
 })
 
 /*<======= MODAL CONSULTAS =======>*/
@@ -170,7 +139,7 @@ consultas.forEach((consultas, indice) => {
 
         containerModal.innerHTML = " "
         containerModal.innerHTML += `
-            < div class="button-close" >
+            <div class="button-close" >
             <h3>${consultas.taller}</h3>
             <button id="modal__btn--close${indice + 1}" class="btn__close"></button>
         </ >

@@ -285,6 +285,7 @@ html {
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.8);
     border-left: 1px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
     backdrop-filter: blur(5px);
     transition: all 500ms ease-in-out; }
     .card__container-servicios .card__servicios .card__servicios-content {
@@ -391,9 +392,6 @@ html {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 2rem; }
-  @media screen and (min-width: 860px) {
-    .button-close {
-      flex-direction: column; } }
   .button-close h3 {
     margin-left: 3rem; }
   .button-close .btn__close {
@@ -413,28 +411,6 @@ html {
     .content .text__content .text__content--div {
       display: inline-block;
       margin: 0.5rem; }
-
-.modal__container--desktop {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.3); }
-  @media screen and (max-width: 651px) {
-    .modal__container--desktop {
-      display: none; } }
-
-.modal__desktop {
-  background-color: white;
-  width: 600px;
-  max-width: 100%;
-  padding: 2.4rem;
-  border-radius: 16px;
-  box-shadow: 0px 4px 4px #7F7F7F; }
 
 .consult .consult__head h2, .consult .consult__cards .consult__cards--content span {
   font-family: "Montserrat", sans-serif;
@@ -705,10 +681,9 @@ footer {
 
 footer .contact {
   background-image: url("../icons/inconosFooter/fondou2.svg");
-  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
   position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
