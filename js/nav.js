@@ -96,8 +96,7 @@ servicios.forEach((servicios, indice) => {
 
 
 
-/*<======= MODAL CONSULTAS =======>*/
-
+/*<======= CARDS CONSULTAS =======>*/
 class Consulta {
     constructor(taller, descrip, descripUno, descripDos, descripTres) {
         this.taller = taller
@@ -126,7 +125,6 @@ consultas.forEach((consultas, indice) => {
 })
 
 /*<======= MODAL CONSULTAS =======>*/
-
 consultas.forEach((consultas, indice) => {
     let btnModalConsultas = document.querySelector(`#card__inner--consult${ indice + 1 } `)
     btnModalConsultas.addEventListener('click', () => {

@@ -337,7 +337,7 @@ html {
   font-weight: 700;
   color: #7F7F7F; }
 
-.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content .text__content--div {
+.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content .text__content--div, .modal__desktop .content__desk {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -403,7 +403,7 @@ html {
     aspect-ratio: 1; }
 
 .content {
-  overflow: scroll; }
+  overflow-y: scroll; }
   .content .text__content {
     width: 100%;
     padding: 2vh 2rem;
@@ -411,6 +411,59 @@ html {
     .content .text__content .text__content--div {
       display: inline-block;
       margin: 0.5rem; }
+
+.modal__desktop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; }
+  .modal__desktop .modal__desktop--content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.4rem;
+    width: 600px;
+    height: 300px;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    background-image: url(../../../img/pastillitas-oso.svg);
+    background-position: top;
+    background-size: 8%;
+    background-repeat: repeat-x;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); }
+  .modal__desktop .close__desk {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+    .modal__desktop .close__desk .close__btn {
+      background-color: unset;
+      background-image: url(../../../icons/x_oso_lila.svg);
+      background-repeat: no-repeat;
+      border: 0;
+      width: 2.4rem;
+      aspect-ratio: 1; }
+  .modal__desktop .content__desk {
+    width: 100%;
+    padding: 2vh 2rem;
+    text-align: justify;
+    display: inline-block;
+    overflow-y: scroll; }
+    .modal__desktop .content__desk p {
+      margin-bottom: 1rem; }
+
+.modal__desktop[data-visible="true"] {
+  display: flex; }
 
 .consult .consult__head h2, .consult .consult__cards .consult__cards--content span {
   font-family: "Montserrat", sans-serif;
@@ -437,7 +490,7 @@ html {
   font-weight: 700;
   color: #7F7F7F; }
 
-.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content .text__content--div {
+.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content .text__content--div, .modal__desktop .content__desk {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -916,7 +969,7 @@ footer .contact img {
   font-weight: 700;
   color: #7F7F7F; }
 
-.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content .text__content--div {
+.hero-section-container .hero-section .hero-section-content .content--modifier p, .content .text__content .text__content--div, .modal__desktop .content__desk {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
