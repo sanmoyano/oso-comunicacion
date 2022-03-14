@@ -61,7 +61,7 @@ servicios.forEach((servicios, indice) => {
 /*======= MODAL SERVICIOS MOBIL =======*/
 let containerModal = document.querySelector('.modal__primary--content');
 /*======= MODAL SERVICIOS DESKTOP =======*/
-let containerModalDesktop = document.querySelector ('.modal__desktop')
+let containerModalDesktop = document.querySelector('.modal__desktop')
 
 servicios.forEach((servicios, indice) => {
     let cardServicios = document.querySelector(`#card__inner${indice + 1}`)
@@ -73,10 +73,10 @@ servicios.forEach((servicios, indice) => {
         } else {
             containerModal.setAttribute('data-visible', false)
         }
-        if(visibleDesktop === "false") {
-            containerModalDesktop.setAttribute ('data-visible', true)
+        if (visibleDesktop === "false") {
+            containerModalDesktop.setAttribute('data-visible', true)
         } else {
-            containerModalDesktop.setAttribute ('data-visible', false)
+            containerModalDesktop.setAttribute('data-visible', false)
         }
 
         containerModal.innerHTML = " "
@@ -94,11 +94,11 @@ servicios.forEach((servicios, indice) => {
             </div>
             `
 
-            containerModalDesktop.innerHTML = " "
-            containerModalDesktop.innerHTML += ` 
+        containerModalDesktop.innerHTML = " "
+        containerModalDesktop.innerHTML += ` 
             <div class="modal__desktop--content">
                 <div class="close__desk">
-                    <h1>${servicios.nombre}</h1>
+                    <h3>${servicios.nombre}</h3>
                     <button id="desktop__btn--close${indice + 1}" class="close__btn"></button>
                 </div>
                 <div class="content__desk">
@@ -113,7 +113,7 @@ servicios.forEach((servicios, indice) => {
             containerModal.setAttribute('data-visible', false)
         })
         let closeBtnDesktop = document.querySelector(`#desktop__btn--close${indice + 1}`)
-        closeBtnDesktop.addEventListener ('click', () => {
+        closeBtnDesktop.addEventListener('click', () => {
             containerModalDesktop.setAttribute('data-visible', false)
         })
     })
@@ -181,3 +181,7 @@ consultas.forEach((consultas, indice) => {
     })
 })
 
+/*<======= MENSAJE WHATSAPP =======>*/
+const mensaje = () => {
+    window.open("https://wa.me/+?text=Hola!");
+}

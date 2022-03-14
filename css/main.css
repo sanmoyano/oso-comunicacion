@@ -331,7 +331,7 @@ html {
   font-weight: 500;
   color: #ffd104; }
 
-.button-close h3 {
+.button-close h3, .modal__desktop .close__desk h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -485,7 +485,7 @@ html {
   font-weight: 500;
   color: #ffd104; }
 
-.button-close h3 {
+.button-close h3, .modal__desktop .close__desk h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -859,7 +859,8 @@ footer .contact img {
   border-radius: 100%;
   width: 60px;
   height: 60px;
-  color: white; }
+  color: white;
+  cursor: pointer; }
 
 @media only screen and (max-width: 600px) {
   .imgIcons {
@@ -964,7 +965,7 @@ footer .contact img {
   font-weight: 500;
   color: #ffd104; }
 
-.button-close h3 {
+.button-close h3, .modal__desktop .close__desk h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;

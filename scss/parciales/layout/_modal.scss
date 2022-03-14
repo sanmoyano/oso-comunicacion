@@ -103,6 +103,9 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 2rem;
+		h3 {
+			@extend %headline-modal;
+		}
 
 		.close__btn {
 			background-color: unset;
