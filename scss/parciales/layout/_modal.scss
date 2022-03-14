@@ -74,10 +74,10 @@
 	height: 100vh;
 	width: 100vw;
 	display: none;
-	// display: flex;
 	align-items: center;
 	justify-content: center;
 	z-index: 1000;
+
 
 	.modal__desktop--content {
 		background-color: white;
@@ -123,10 +123,11 @@
 		p {
 			margin-bottom: 1rem;
 		}
-		overflow-y: scroll;
 	}
 }
+@include desktop {
+	.modal__desktop[data-visible="true"] {
+		display: flex;
+	}
 
-.modal__desktop[data-visible = "true"] {
-	display: flex;
 }

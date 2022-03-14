@@ -458,13 +458,13 @@ html {
     width: 100%;
     padding: 2vh 2rem;
     text-align: justify;
-    display: inline-block;
-    overflow-y: scroll; }
+    display: inline-block; }
     .modal__desktop .content__desk p {
       margin-bottom: 1rem; }
 
-.modal__desktop[data-visible="true"] {
-  display: flex; }
+@media screen and (min-width: 860px) {
+  .modal__desktop[data-visible="true"] {
+    display: flex; } }
 
 .consult .consult__head h2, .consult .consult__cards .consult__cards--content span {
   font-family: "Montserrat", sans-serif;

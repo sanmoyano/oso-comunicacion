@@ -68,13 +68,17 @@ servicios.forEach((servicios, indice) => {
     cardServicios.addEventListener('click', () => {
         let visible = containerModal.getAttribute('data-visible')
         let visibleDesktop = containerModalDesktop.getAttribute('data-visible')
-        if (visible, visibleDesktop === "false") {
+        if (visible === "false") {
             containerModal.setAttribute('data-visible', true)
-            containerModalDesktop.setAttribute ('data-visible', true)
         } else {
             containerModal.setAttribute('data-visible', false)
+        }
+        if(visibleDesktop === "false") {
+            containerModalDesktop.setAttribute ('data-visible', true)
+        } else {
             containerModalDesktop.setAttribute ('data-visible', false)
         }
+
         containerModal.innerHTML = " "
         containerModal.innerHTML += `
             <div class="button-close">
