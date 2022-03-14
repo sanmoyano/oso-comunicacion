@@ -225,6 +225,9 @@ html {
         @media screen and (min-width: 860px) {
           .hero-section-container .hero-section .main-quienes .quienes-content p {
             width: 20vw; } }
+      @media screen and (min-width: 860px) {
+        .hero-section-container .hero-section .main-quienes .quienes-content {
+          width: none; } }
     @media screen and (min-width: 860px) {
       .hero-section-container .hero-section .main-quienes {
         width: 40vw; } }

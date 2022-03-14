@@ -83,6 +83,9 @@
 						width: 20vw;
 					}
 				}
+				@include desktop {
+					width: none;
+				}
 			}
 
 			@include desktop {
