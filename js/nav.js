@@ -60,15 +60,20 @@ servicios.forEach((servicios, indice) => {
 
 /*======= MODAL SERVICIOS MOBIL =======*/
 let containerModal = document.querySelector('.modal__primary--content');
+/*======= MODAL SERVICIOS DESKTOP =======*/
+let containerModalDesktop = document.querySelector ('.modal__desktop')
 
 servicios.forEach((servicios, indice) => {
     let cardServicios = document.querySelector(`#card__inner${indice + 1}`)
     cardServicios.addEventListener('click', () => {
         let visible = containerModal.getAttribute('data-visible')
-        if (visible === "false") {
+        let visibleDesktop = containerModalDesktop.getAttribute('data-visible')
+        if (visible, visibleDesktop === "false") {
             containerModal.setAttribute('data-visible', true)
+            containerModalDesktop.setAttribute ('data-visible', true)
         } else {
             containerModal.setAttribute('data-visible', false)
+            containerModalDesktop.setAttribute ('data-visible', false)
         }
         containerModal.innerHTML = " "
         containerModal.innerHTML += `
@@ -84,17 +89,32 @@ servicios.forEach((servicios, indice) => {
                 </div>
             </div>
             `
+
+            containerModalDesktop.innerHTML = " "
+            containerModalDesktop.innerHTML += ` 
+            <div class="modal__desktop--content">
+                <div class="close__desk">
+                    <h1>${servicios.nombre}</h1>
+                    <button id="desktop__btn--close${indice + 1}" class="close__btn"></button>
+                </div>
+                <div class="content__desk">
+                    <p>${servicios.parrafo}</p>
+                    <p>${servicios.parrafoUno}</p>
+                    <p>${servicios.parrafoDos}</p>
+                </div>
+            </div>
+            `
         let closeBtn = document.querySelector(`#modal__btn--close${indice + 1}`)
         closeBtn.addEventListener('click', () => {
             containerModal.setAttribute('data-visible', false)
         })
+        let closeBtnDesktop = document.querySelector(`#desktop__btn--close${indice + 1}`)
+        closeBtnDesktop.addEventListener ('click', () => {
+            containerModalDesktop.setAttribute('data-visible', false)
+        })
     })
 
 })
-
-//MODAL SERVICIOS DESKTOP
-
-
 
 /*<======= CARDS CONSULTAS =======>*/
 class Consulta {
@@ -107,8 +127,8 @@ class Consulta {
     }
 }
 
-let consultaUno = new Consulta ("Consultoria en comunicación con perspectiva de género", "¿En que consiste?", " ", "Toma postura", "> Auditoría inicial para evaluar la comunicación actual de tu negocio y un plan para <strong>comenzar a comunicar de forma responsable, igualitaria e inclusiva.</strong>")
-let consultaDos = new Consulta ("Triple impacto en mi negocio", "En Oso tenemos la convicción de que <strong>cualquier negocio, marca o emprendimiento puede ser pensado desde la sustentabilidad y el compromiso social y ambiental.</strong>", "¿En qué consiste?", ">  Auditoría inicial para conocer el negocio y un plan de acción real y concreto para sumar acciones de responsabilidad social.", ">  Campaña de comunicación para difundir las acciones.")
+let consultaUno = new Consulta("Consultoria en comunicación con perspectiva de género", "¿En que consiste?", " ", "Toma postura", "> Auditoría inicial para evaluar la comunicación actual de tu negocio y un plan para <strong>comenzar a comunicar de forma responsable, igualitaria e inclusiva.</strong>")
+let consultaDos = new Consulta("Triple impacto en mi negocio", "En Oso tenemos la convicción de que <strong>cualquier negocio, marca o emprendimiento puede ser pensado desde la sustentabilidad y el compromiso social y ambiental.</strong>", "¿En qué consiste?", ">  Auditoría inicial para conocer el negocio y un plan de acción real y concreto para sumar acciones de responsabilidad social.", ">  Campaña de comunicación para difundir las acciones.")
 
 let consultas = [consultaUno, consultaDos]
 let consultasCardContainer = document.querySelector('#consult__cards--container')
@@ -126,7 +146,7 @@ consultas.forEach((consultas, indice) => {
 
 /*<======= MODAL CONSULTAS =======>*/
 consultas.forEach((consultas, indice) => {
-    let btnModalConsultas = document.querySelector(`#card__inner--consult${ indice + 1 } `)
+    let btnModalConsultas = document.querySelector(`#card__inner--consult${indice + 1} `)
     btnModalConsultas.addEventListener('click', () => {
         let visible = containerModal.getAttribute('data-visible')
         if (visible === "false") {
@@ -150,7 +170,7 @@ consultas.forEach((consultas, indice) => {
                 </div>
             </div>
         `
-        let closeBtn = document.querySelector(`#modal__btn--close${ indice + 1 } `)
+        let closeBtn = document.querySelector(`#modal__btn--close${indice + 1} `)
         closeBtn.addEventListener('click', () => {
             containerModal.setAttribute('data-visible', false)
         })

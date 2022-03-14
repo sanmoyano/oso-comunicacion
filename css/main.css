@@ -452,7 +452,8 @@ html {
       background-repeat: no-repeat;
       border: 0;
       width: 2.4rem;
-      aspect-ratio: 1; }
+      aspect-ratio: 1;
+      cursor: pointer; }
   .modal__desktop .content__desk {
     width: 100%;
     padding: 2vh 2rem;
