@@ -162,9 +162,9 @@ consultas.forEach((consultas, indice) => {
         containerModal.innerHTML = " "
         containerModal.innerHTML += `
             <div class="button-close" >
-            <h3>${consultas.taller}</h3>
-            <button id="modal__btn--close${indice + 1}" class="btn__close"></button>
-        </ >
+                <h3>${consultas.taller}</h3>
+                <button id="modal__btn--close${indice + 1}" class="btn__close"></button>
+            </div>
             <div class="content">
                 <div class="text__content">
                     <div class="text__content--div">${consultas.descrip}</div>
