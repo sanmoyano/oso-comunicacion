@@ -183,6 +183,5 @@ consultas.forEach((consultas, indice) => {
 
 /*<======= MENSAJE WHATSAPP =======>*/
 const mensaje = () => {
-    window.open("https://wa.me/27996539");
-
+    window.open("https://wa.me/5491127996539?text=Hola!");
 }
